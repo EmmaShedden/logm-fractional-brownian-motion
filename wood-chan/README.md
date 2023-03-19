@@ -1,5 +1,6 @@
 # Wood-Chan (Circulant Method) Algorithm
 
+See my [GitHub](https://github.com/EmmaShedden/log-m/tree/master/wood-chan) page for a version of this README that renders correctly. Differences between the way GitHub and GitLab render Markdown equations mean that a large fraction of this page is not reader-friendly, but the GitHub version works fine.
 
 ## Mathematical foundation
 Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https://drive.google.com/file/d/1BEjP1AHJWwW1HtJDZcKPLzWJ1wXDoxcW/view)
