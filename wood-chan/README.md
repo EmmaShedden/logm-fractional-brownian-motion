@@ -33,7 +33,7 @@ $$ \mathbb{E}(\xi_k)
 
 ### Covariance matrix of $\xi$
 - We can calculate the covariance function (matrix) of $\xi$ using its relationship to $B^H$:
-$$ \begin{aligned}
+$$ \begin{align*}
 \text{Cov}(\xi_i, ~ \xi_j) 
 
  &= \text{Cov}(B_i^H - B_{i-1}^H, ~ B_j^H - B_{j-1}^H) & \text{definition of } \xi \\
@@ -105,7 +105,7 @@ $$ \begin{aligned}
     & \\
 
  &= 1 & \text{where } i \in I_1
-\end{aligned}$$
+\end{align*}$$
 
 - Observe that the covariance depends only on the difference between the timestamps, not their values; in other words, the sequence $\xi_1, \cdots, \xi_N$ is a stationary Gaussian process.
     - This is essentially a special case of the proof that fBm has stationary increments; the general version is not much different.
@@ -319,4 +319,4 @@ $$ \begin{align*}
 
 ## Simulation results
 
-![Paths of fBm simulated for 9 values of the Hurst parameter](/fBm_9.png)
+![Paths of fBm simulated for 9 values of the Hurst parameter](/wood-chan/fBm_9_small.png)
