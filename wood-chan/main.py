@@ -1,6 +1,8 @@
 import numpy as np
 from numpy.fft import fft, ifft
 import cmath
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # calculate rho_H(n)
 # n : integer in 0..N-1
@@ -12,11 +14,11 @@ def rho(n, H):
     return (-2*n**(2*H) + (n+1)**(2*H) + (n-1)**(2*H))/2
 
 # calculate c_0, ..., c_{M-1} where M = 2(N-1)
-# N : integer in R+
+# N : integer in R^+
 def circulant_coefficients(N, M, H):
     assert(N > 0 and type(M) is int)
-    lower = np.array([rho(n, H) for n in range(N)], dtype=np.float64)
-    upper = np.array([rho(M-n, H) for n in range(N, M)], dtype=np.float64)
+    lower = np.array([rho(n, H) for n in range(N)], dtype=np.float64) # N of these
+    upper = np.array([rho(M-n, H) for n in range(N, M)], dtype=np.float64) # N - 2 of these
     return np.concatenate((lower, upper))
 
 # given a complex array, take the real part
@@ -33,46 +35,55 @@ def simulate(N, M, H):
 
     increments = fGn * N**(-H)
 
-    fBm = np.cumsum(increments)
-    return fBm
+    fBm = np.cumsum(increments) # xi_1, ..., xi_N
+    return np.concatenate(([0.0], fBm))
 
-########## extra (debugging) ##########
+# plot all the fBms next to each other
+def plot(Hs, Ns, Ts, fBms):
+    assert(len(Hs) == len(Ns) and len(Ns) == len(Ts) and len(Ts) == len(fBms))
+    numrows = len(Ns)
+    fig, axs = plt.subplots(numrows, 1, figsize=(14, 6*numrows), sharex=True)
+    
+    for n in range(numrows):
+        axs[n].plot(Ts[n], fBms[n], label="H={:.2f}, N={}".format(Hs[n], Ns[n]))
+        axs[n].legend(fontsize = 18)
 
-def print_matrix(m):
-    for j in range(min(len(m[0]), 8)):
-        print("---------------------", end='')
-    print("\n")
-    for i in range(min(len(m[0]), 8)):
-        for j in range(len(m[0])):
-            print(m[i][j], ",\t", sep='', end='')
-        print("\n")
-    for j in range(min(len(m[0]), 8)):
-        print("---------------------", end='')
-    print("\n\n")
+    fig.suptitle("Paths of fBm for different values of H", fontsize=24)
+    fig.subplots_adjust(wspace=0.1, hspace=0.1, top=0.95, bottom=0.05)
 
-def print_array(a):
-    for i in range(min(len(a), 8)):
-        print("---------------------", end='')
-    print("\n")
-    for i in range(min(len(a), 8)):
-        print(a[i], ",\t", sep='', end='')
-    print("\n")
-    for i in range(min(len(a), 8)):
-        print("---------------------", end='')
-    print("\n\n")
+    for ax in axs.flat:
+        ax.set_xlabel("Time (over the unit interval)", fontsize=18)
+        ax.set_ylabel("Particle position", fontsize=18)
+    for ax in axs.flat:
+        ax.label_outer()
+
+    plt.savefig("fBm.png")
 
 def main():
-    # H : float in (0, 1)
-    H = 0.99
-    # q : int in (0, \inf)
+    epsilon = 0.2 # distance between Hs
+    # q : int in (0, infty)
     q = 10
-    
-    # N : int in (0, \inf) which is one more than a power of 2
-    N = 2**q + 1
-    M = 2**(q+1)
-    assert(0 < H and H < 1 and type(N) is int and 0 < N)
-    
-    print_array(simulate(N, M, H))    
+
+    N = 2**q + 1 # 1/delta where delta is the granularity of the discretized time interval
+    M = 2**(q+1) #2(N-1)
+    delta = 1/float(N)
+
+    # H : float in (0, 1)
+    Hs = np.arange(epsilon, 1, epsilon)
+    n = len(Hs) # number of trials
+    Ns = np.full((n, ), N) # for now we won't vary this parameter
+
+    Ts = np.array([np.arange(0, 1+delta, delta) for k in range(n)])
+
+    fBms = np.empty((n, N+1, ))
+
+    for k in range(n):
+        H = Hs[k]
+        assert(0 < H and H < 1 and type(N) is int and 0 < N)
+        
+        fBms[k] = simulate(N, M, H)
+
+    plot(Hs, Ns, Ts, fBms)
 
 if __name__ == "__main__":
     main()

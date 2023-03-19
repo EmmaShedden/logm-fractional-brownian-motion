@@ -4,18 +4,18 @@
 Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https://drive.google.com/file/d/1BEjP1AHJWwW1HtJDZcKPLzWJ1wXDoxcW/view)
 
 ### Problem setup
-- Let $T := \{ 0, \frac{1}{N}, \frac{2}{N}, \cdots, \frac{N-1}{N}, 1 \}$ be the discretized unit time interval with $N$ increments
+- Let $T := \{ 0, \frac{1}{N}, \frac{2}{N}, \cdots, \frac{N-1}{N}, 1 \}$ be the discretized unit time interval with $N$ increments.
 
-- Let $t_k = t_k^N := \frac{k}{N} \in T$ for $k \in I_0 := \{0, \cdots, N\}$ denote the timestamps
+- Let $t_k = t_k^N := \frac{k}{N} \in T$ for $k \in I_0 := \{0, \cdots, N\}$ denote the timestamps.
 
-- Let $B_t^H$ for $t \in T$ be the value of an fBm with Hurst parameter $H$ at time $t$
-    - Since $B^H$ is self-stationary, $B_{t_k}^H = B_{k/N}^H = N^{-2H} B_k^H$ where $k \in I_0$
+- Let $B_t^H$ for $t \in T$ be the value of an fBm with Hurst parameter $H$ at time $t$.
+    - Since $B^H$ is self-stationary, $B_{t_k}^H = B_{k/N}^H = N^{-2H} B_k^H$ where $k \in I_0$.
 
 - We know the covariance function of $B^H$ from its definition:
 $$ \text{Cov}(B^H_s, B^H_t) = \mathbb{E}[B^H_s B^H_t] = \frac{1}{2}(t^{2H} + s^{2H} - |t - s|^{2H}) $$
 
-- Let $\xi_k = \xi_k^H := B_k^H - B_{k-1}^H = N^{-2H} \left ( B_{t_k}^H - B_{t_{k-1}}^H \right )$ for $k \in I_1 := \{1, \cdots, N\}$
-    - $\xi_0 = \xi_0^H := B_0^H = 0$ with probability $1$
+- Let $\xi_k = \xi_k^H := B_k^H - B_{k-1}^H = N^{-2H} \left ( B_{t_k}^H - B_{t_{k-1}}^H \right )$ for $k \in I_1 := \{1, \cdots, N\}$.
+    - $\xi_0 = \xi_0^H := B_0^H = 0$ with probability $1$.
 
 - Now, $\xi := (\xi_1, \cdots, \xi_N)$ is a centered Gaussian vector:
 $$ \mathbb{E}(\xi_k)
@@ -107,12 +107,12 @@ $$ \begin{aligned}
  &= 1 & \text{where } i \in I_1
 \end{aligned}$$
 
-- Observe that the covariance depends only on the difference between the timestamps, not their values; in other words, the sequence $\xi_1, \cdots, \xi_N$ is a stationary Gaussian process
-    - This is essentially a special case of the proof that fBm has stationary increments; the general version is not much different
-    - As a result, the elements of each diagonal of the covariance matrix for $\xi$ are equal
-    - Like all variance-covariance matrices, this matrix is also symmetric
+- Observe that the covariance depends only on the difference between the timestamps, not their values; in other words, the sequence $\xi_1, \cdots, \xi_N$ is a stationary Gaussian process.
+    - This is essentially a special case of the proof that fBm has stationary increments; the general version is not much different.
+    - As a result, the elements of each diagonal of the covariance matrix for $\xi$ are equal.
+    - Like all variance-covariance matrices, this matrix is also symmetric.
 
-- Let $\rho_H(n) := \text{cov} \left(\xi_1, ~ \xi_{n+1} \right) = \text{cov} \left(\xi_i, ~ \xi_{j} \right) ~~ \forall i, j \in I_1$ such that $|i-j| = n$ as calculated above
+- Let $\rho_H(n) := \text{cov} \left(\xi_1, ~ \xi_{n+1} \right) = \text{cov} \left(\xi_i, ~ \xi_{j} \right) ~~ \forall i, j \in I_1$ such that $|i-j| = n$ as calculated above.
     - So all the principle diagonal elements are $\rho_H(0) = 1$, all the super-diagonal and sub-diagonal elements are $\rho_H(1)$, the next two diagonals have $\rho_H(2)$, and so on:
 
 $$ \text{cov}(\xi) = \begin{pmatrix}
@@ -124,17 +124,17 @@ $$ \text{cov}(\xi) = \begin{pmatrix}
 \rho_H(N-1) & \rho_H(N-2) & \rho_H(N-3) & \cdots & \rho_H(1)    & 1             \\
 \end{pmatrix}$$
 
-- It is a fact, which we do not prove here, that the matrix $\text{cov}(\xi)$ is positive definite, so it has positive, real eigenvalues
+- It is a fact, which we do not prove here, that the matrix $\text{cov}(\xi)$ is positive definite, so it has positive, real eigenvalues.
 
 ### Circulant matrix
-- Let $M := 2(N-1)$
+- Let $M := 2(N-1)$.
 
 - Let the coefficients $c_k$ for $k \in \{ 0, \cdots, M-1 \}$ be defined as:
 $$\begin{align*}
 c_0 &= 1, & \\
 c_k &= \rho_H(k), & 1 \leq k \leq N-1  \\
 c_k &= \rho_H(M-k), & N \leq k \leq M-1 \\
-\text{which implies } ~~~ c_{M-k} &= \rho_H(k) & 1 \leq k \leq N-1
+\text{which imply } ~~~ c_{M-k} &= \rho_H(k), & 1 \leq k \leq N-1
 \end{align*}$$
 
 - Let $C$ denote the circulant matrix on $c_0, ~ \cdots, ~ c_{M-1}$:
@@ -203,7 +203,7 @@ $$\begin{align*}
 - In other words, for input vector $a = (a_0, ~ \cdots, ~ a_{n-1}) \in \mathbb{C}^n$, DFT outputs $\text{DFT}(a) = X = (X_0, ~ \cdots, ~ X_{n-1}) \in \mathbb{C}^n$ such that:
 $$ X_j
  = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac{j}{n} \right )^k
- = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac{jk}{n} \right ) ~~~~ \forall j \in \{ 0, ~ \cdots, ~ n-1 \}. $$
+ = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac{jk}{n} \right ) ~~~~ \forall j \in \{ 0, ~ \cdots, ~ n-1 \} $$
 
 - Therefore $\displaystyle{ Qa = \frac{1}{\sqrt{M}} \text{DFT}(a) }$ for any vector $a \in \mathbb{C}^{M}$.
 
@@ -293,12 +293,14 @@ $$\begin{align*}
 
 where the last step references the construction of the circulant matrix [above](#circulant-matrix). Therefore $Q \Lambda Q^* = C$.
 
-- We have proved $Q$ is unitary, and by construction $\Lambda$ is diagonal so has a square root matrix constructed efficiently by raising each diagonal entry to the power of $\frac{1}{2}$ (as a complex number, so this operation is well-defined and $\lambda_k^{1/2} \cdot \overline{\lambda_k^{1/2}} = \lambda_k ~~ \forall k$). Further, all the relevant matrices are symmetric. So, 
-$$C = (Q \Lambda^{1/2} Q^*) \cdot (Q \overline{\Lambda^{1/2}} Q^*) = (Q \Lambda^{1/2} Q^*) \cdot (Q \Lambda^{1/2} Q^*)^*$$
+- We have proved $Q$ is unitary, and by construction $\Lambda$ is diagonal. It follows that the $\lambda_k$ are the eigenvalues of C.
 
-- Let $S := Q \Lambda^{1/2} Q^*$. By previous assertion, the entries $C$ is positive definite, so has positive, real eigenvalues. Therefore, $S$ is real.
+- By previous assertion, the $C$ is positive definite, so has positive, real eigenvalues. Therefore $\Lambda$ so has a real square root matrix constructed efficiently by raising each diagonal entry to the power of $\frac{1}{2}$. Further, all the relevant matrices are symmetric. So, 
+$$C = (Q \Lambda^{1/2} Q^*) \cdot (Q \Lambda^{1/2} Q^*) = (Q \Lambda^{1/2} Q^*) \cdot (Q \Lambda^{1/2} Q^*)^*$$
 
-- Therefore $(\xi_1, ~ \cdots, ~ \xi_{N-1}, ~ \xi_{N-1}, ~ \cdots, ~ \xi_1) = S\zeta$ where $\zeta$ is standard Gaussian.
+- Let $S := Q \Lambda^{1/2} Q^*$. Therefore, $S$ is real. (TODO)
+
+- Therefore $(\xi_1, ~ \cdots, ~ \xi_{N-1}, ~ \xi_{N-1}, ~ \cdots, ~ \xi_1) = S\zeta$ where $\zeta$ is standard Gaussian. (TODO)
 
 - This can be computed efficiently using DFT: 
 $$ \begin{align*}
@@ -315,9 +317,6 @@ $$ \begin{align*}
  &= \text{DFT} \left( \Lambda^{1/2} \text{DFT}^{-1} (\zeta) \right) & \\
 \end{align*}$$
 
-## Code documentation
-Documenting my functions here instead of `main.py` because the explanations include a lot of math that I don't want to write in ascii
+## Simulation results
 
-- `rho_H(n)`
-    - INPUT : $n \in \{1, \cdots, N\}$
-    - OUTPUT : $\rho_H(n) = N^{2H} \text{cov}(\xi_1, ~ \xi_{n+1} )$
+![Paths of fBm simulated for 9 values of the Hurst parameter](/fBm_9.png)
