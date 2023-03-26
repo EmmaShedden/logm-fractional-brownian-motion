@@ -113,7 +113,7 @@ C := \text{circ}(c_0, ~ \cdots, ~ c_{M-1}) =
 \end{pmatrix}
 ```
 
-- Observe that $C_{jk} = c_{k-j} = c_{|k-j|}$ for $j \leq k$ (i.e. on/above the main diagonal), and $C_{jk} = c_{M-j+k} = c_{M-|k-j|}$ for $j > k$ (i.e. below the main diagonal). But in fact, $c_r = c_{M-r} = \rho_H(r)$ for all $r \in \lbrace 1, ~ \cdots, ~ M-1 \rbrace$. So $C_{jk} = c_{|k-j|} = c_{M-|k-j|}$ for all $j, ~ k \in \{ 0, ~ \cdots, ~ M-1 \}$ such that $|k-j|$ $\not \in$ $\lbrace 0, ~ M \rbrace$ i.e. $M ~ \nmid ~ j-k$.
+- Observe that $C_{jk} = c_{k-j} = c_{|k-j|}$ for $j \leq k$ (i.e. on/above the main diagonal), and $C_{jk} = c_{M-j+k} = c_{M-|k-j|}$ for $j > k$ (i.e. below the main diagonal). But in fact, $c_r = c_{M-r} = \rho_H(r)$ for all $r \in \lbrace 1, ~ \cdots, ~ M-1 \rbrace$. So $C_{jk} = c_{|k-j|} = c_{M-|k-j|}$ for all $j, ~ k \in \{ 0, ~ \cdots, ~ M-1 \}$ such that $\not \in$ $\lbrace 0, ~ M \rbrace$ i.e. $M ~ \nmid ~ j-k$.
 
 - Let $Q := ( q_{jk} )_{j, k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace}$ with coefficients proportional to $M$-th roots of unity:
 
