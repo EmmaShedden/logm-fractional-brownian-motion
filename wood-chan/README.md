@@ -2,12 +2,6 @@
 
 See my [GitHub](https://github.com/EmmaShedden/log-m/tree/master/wood-chan) page for a version of this README that renders correctly. Differences between the way GitHub and GitLab render Markdown equations mean that a large fraction of this page is not reader-friendly, but the GitHub version works fine.
 
-A matrix can be written as stem:[[[a,b\],[c,d\]\]((n),(k))].
-
-```math
-\begin{pmatrix} 1           & \rho_H(1)   & \rho_H(2)   & \cdots & \rho_H(N-2)  & \rho_H(N-1) \end{pmatrix}
-```
-
 ## Mathematical foundation
 Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https://drive.google.com/file/d/1BEjP1AHJWwW1HtJDZcKPLzWJ1wXDoxcW/view)
 
@@ -99,7 +93,8 @@ c_k &= \rho_H(M-k), & N \leq k \leq M-1 \\
 
 - Let $C$ denote the circulant matrix on $c_0, ~ \cdots, ~ c_{M-1}$:
 
-$$ C := \text{circ}(c_0, ~ \cdots, ~ c_{M-1}) = 
+```math
+C := \text{circ}(c_0, ~ \cdots, ~ c_{M-1}) = 
 \begin{pmatrix}
  c_0        & c_1       & c_2       & \cdots    & c_{M-2}   & c_{M-1}   \\
  c_{M-1}    & c_0       & c_1       & \cdots    & c_{M-3}   & c_{M-2}   \\
@@ -116,19 +111,20 @@ $$ C := \text{circ}(c_0, ~ \cdots, ~ c_{M-1}) =
  \rho_H(2)  & \rho_H(3) & \rho_H(4) & \cdots    & 1         & \rho_H(1) \\
  \rho_H(1)  & \rho_H(2) & \rho_H(3) & \cdots    & \rho_H(1) & 1         \\
 \end{pmatrix}
-$$
+```
 
 - Observe that $C_{jk} = c_{k-j} = c_{|k-j|}$ for $j \leq k$ (i.e. on/above the main diagonal), and $C_{jk} = c_{M-j+k} = c_{M-|k-j|}$ for $j > k$ (i.e. below the main diagonal). But in fact, $c_r = c_{M-r} = \rho_H(r)$ for all $r \in \lbrace 1, ~ \cdots, ~ M-1 \rbrace$. So $C_{jk} = c_{|k-j|} = c_{M-|k-j|}$ for all $j, ~ k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace$ such that $|k-j| \not \in \lbrace 0, ~ M \rbrace$ i.e. $M ~ \nmid ~ j-k$.
 
 - Let $Q := ( q_{jk} )_{j, k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace}$ with coefficients proportional to $M$-th roots of unity:
 
-$$ q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)} $$
+$$q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}$$
 
 - Observe that $Q^* =: (q_{jk}^*) = (\overline{q_{kj}}) = (\overline{q_{jk}})$ so that $\forall j, ~ k \in \lbrace0, ~ \cdots, ~ M-1 \rbrace$:
 
-$$\begin{aligned}
+```math
+\begin{aligned}
 (QQ^*)_{jk}
- &= \sum_{r=0}^{M-1} q_{jr} q_{rk}^{\*} & \\
+ &= \sum_{r=0}^{M-1} q_{jr} q_{rk}^{*} & \\
  &= \sum_{r=0}^{M-1} q_{jr} \overline{q_{rk}} & \\
  &= \sum_{r=0}^{M-1} \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jr}{M} \right)} \frac{1}{\sqrt{M}} \exp {\left( 2\pi i \frac{kr}{M} \right)} & \\
  &= \sum_{r=0}^{M-1} \frac{1}{M} \exp {\left( 2\pi i \frac{(k-j)r}{M} \right)} & \\
@@ -143,18 +139,21 @@ $$\begin{aligned}
         \displaystyle{ \frac{1}{M} \cdot \frac{1 - 1^{k-j} }{1-\exp \lbrace 2 \pi i \frac{k-j}{M} \rbrace } }, & k \neq j \\
     \end{cases} & \text{note the denominator is nonzero by assumption} \\
  &= \delta_{jk}
-\end{aligned}$$
+\end{aligned}
+```
 
 - Therefore by symmetry, $Q Q^* = Q^* Q = I_M$, and $Q$ is unitary.
 
 - Right-multiplying $Q$ and $Q^*$, respectively, by a column vector $a = (a_0, ~ \cdots, ~ a_{M-1})^T \in \mathbb{C}^M$ gives:
 
-$$\begin{aligned}
+```math
+\begin{aligned}
 (Qa)_j &= \sum_{k=0}^{M-1} q_{jk} a_k
  = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} a_k \exp {\left( -2\pi i \frac{jk}{M} \right)} & \text{and} \\\
 (Q^* a)_j &= \sum_{k=0}^{M-1} \overline{q_{jk}} a_k
  = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} a_k \exp {\left( 2\pi i \frac{jk}{M} \right)} & \\\
-\end{aligned}$$
+\end{aligned}
+```
 
 ### Applying DFT
 - The discrete Fourier transform takes as input the coefficient representation of a polynomial and outputs a point-value representation of the polynomial, where the points lie on the unit circle. In particular:
@@ -165,9 +164,7 @@ $$\begin{aligned}
 
 - In other words, for input vector $a = (a_0, ~ \cdots, ~ a_{n-1}) \in \mathbb{C}^n$, DFT outputs $\text{DFT}(a) = X = (X_0, ~ \cdots, ~ X_{n-1}) \in \mathbb{C}^n$ such that:
 
-$$ X_j
- = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k
- = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac{jk}{n} \right ) ~~~~ \forall j \in \lbrace 0, ~ \cdots, ~ n-1 \rbrace $$
+$$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac{jk}{n} \right ) ~~~~ \forall j \in \lbrace 0, ~ \cdots, ~ n-1 \rbrace$$
 
 - Therefore $\displaystyle{ Qa = \frac{1}{\sqrt{M}} \text{DFT}(a) }$ for any vector $a \in \mathbb{C}^{M}$.
 
@@ -175,7 +172,8 @@ $$ X_j
 
 - Consider $a$, $X$, and $n$ from above.
 
-$$\begin{aligned}
+```math
+\begin{aligned}
 (\text{DFT}^{-1} \circ \text{DFT})(a) &= \text{DFT}^{-1}(X) & \\
  &= \left ( \frac{1}{n} \sum_{j=0}^{n-1} X_j \exp \left (2 \pi i \frac{r}{n} \right )^j \right )_{r \in \lbrace 0, ~ \cdots, ~ n-1 \rbrace} & \\
  &= \frac{1}{n} \left ( \sum_{j=0}^{n-1} X_j \exp \left (2 \pi i \frac{jr}{n} \right ) \right )_{r \in \lbrace 0, ~ \cdots, ~ n-1 \rbrace} & \\
@@ -185,11 +183,13 @@ $$\begin{aligned}
  &= \left ( \sum_{k=0}^{n-1} a_k \delta_{kr} \right )_{r \in \lbrace 0, ~ \cdots, ~ n-1 \rbrace} & \\
  &=  ( a_r )_{r \in \lbrace 0, ~ \cdots, ~ n-1 \rbrace} & \\
  &= a & \\
-\end{aligned}$$
+\end{aligned}
+```
 
 - Proof of $(\dagger)$:
 
-$$\begin{aligned}
+```math
+\begin{aligned}
 \sum_{j=0}^{n-1} \exp \left (2 \pi i \frac{jm}{n} \right )
  &= \begin{cases} 
         \displaystyle{\sum_{j=0}^{n-1} 1^{jm / n}}, & n ~ | ~ m, \text{ i.e. } \frac m n \in \mathbb{Z} \\\
@@ -202,7 +202,8 @@ $$\begin{aligned}
         \displaystyle{ \frac{1 - 1^{m} }{1-\exp \lbrace 2 \pi i \frac{m}{n} \rbrace } }, & n ~ \nmid ~ m \\\
     \end{cases} & \text{note the denominator is nonzero by assumption} \\\
  &= n \delta_{n ~ | ~ m} & \text{for any } n \neq 0, m \in \mathbb{Z} \hspace2ex (\dagger)
-\end{aligned}$$
+\end{aligned}
+```
 
 - So $\displaystyle{ Q^* a = \sqrt{M} \cdot \text{DFT}^{-1}(a) }$ for any vector $a \in \mathbb{C}^{M}$.
 
@@ -213,10 +214,13 @@ $$\begin{aligned}
 
 - Let $\Lambda := \text{diag}(\lambda_0, ~ \cdots, ~ \lambda_{M-1})$ be the diagonal matrix with $\lambda_k$'s along the diagonal.
 
-$$ (Q \Lambda)_{jk} = q_{jk} \lambda_k = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)} \sum_{r=0}^{M-1}c_r \exp(2 \pi i \frac{kr}{M}) $$
+```math
+(Q \Lambda)_{jk} = q_{jk} \lambda_k = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)} \sum_{r=0}^{M-1}c_r \exp(2 \pi i \frac{kr}{M})
+```
 
-$$\begin{aligned}
-(Q \Lambda Q^*)_{js} &= \sum_{k=0}^{M-1} (Q \Lambda)_{jk} Q_{ks}^{\*} & \\
+```math
+\begin{aligned}
+(Q \Lambda Q^*)_{js} &= \sum_{k=0}^{M-1} (Q \Lambda)_{jk} Q_{ks}^{*} & \\
  &= \sum_{k=0}^{M-1} (Q \Lambda)_{jk} \overline{q_{ks}} & \\
  &= \sum_{k=0}^{M-1} q_{jk} \lambda_k \overline{q_{ks}} & \\
  &= \sum_{k=0}^{M-1} \frac{1}{\sqrt{M}} \exp {\left(-2\pi i \frac{jk}{M} \right)} \lambda_k \overline{\frac{1}{\sqrt{M}} \exp {\left(-2\pi i \frac{ks}{M} \right)}} & \\
@@ -233,7 +237,8 @@ $$\begin{aligned}
         c_{|j-s|}, & j \geq s \\
     \end{cases} & \\
  &= C_{js} & \forall j, ~ s \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace \\
-\end{aligned}$$
+\end{aligned}
+```
 
 where the last step references the construction of the circulant matrix [above](#circulant-matrix). Therefore $Q \Lambda Q^* = C$.
 
@@ -241,7 +246,9 @@ where the last step references the construction of the circulant matrix [above](
 
 - By previous assertion, the $C$ is positive definite, so has positive, real eigenvalues. Therefore $\Lambda$ so has a real square root matrix constructed efficiently by raising each diagonal entry to the power of $\frac{1}{2}$. Further, all the relevant matrices are symmetric. So, 
 
-$$C = (Q \Lambda^{1/2} Q^{\*}) \cdot (Q \Lambda^{1/2} Q^{\*}) = (Q \Lambda^{1/2} Q^{\*}) \cdot (Q \Lambda^{1/2} Q^{\*})^{\*}$$
+```math
+C = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*}) = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*})^{*}
+```
 
 
 - Let $S := Q \Lambda^{1/2} Q^*$. By uniqueness of the square root of $C$, $S$ is real. [(source)](https://www.sciencedirect.com/science/article/pii/S0024379500002433)
@@ -250,14 +257,16 @@ $$C = (Q \Lambda^{1/2} Q^{\*}) \cdot (Q \Lambda^{1/2} Q^{\*}) = (Q \Lambda^{1/2}
 
 - This can be computed efficiently using DFT: 
 
-$$ \begin{aligned}
+```math
+\begin{aligned}
 (\xi_1, ~ \cdots, ~ \xi_{N-1}, ~ \xi_{N-1}, ~ \cdots, ~ \xi_1)
  &= S\zeta & \\
  &= Q \Lambda^{1/2} Q^* \zeta & \\
  &= \left( \frac{1}{\sqrt{M}} Q \right) \Lambda^{1/2} \left( \sqrt{M} Q^* \right) \zeta & \\
  &= \left( \frac{1}{\sqrt{M}} Q \right) \Lambda^{1/2} \text{DFT}^{-1} (\zeta) & \\
  &= \text{DFT} \left( \Lambda^{1/2} \text{DFT}^{-1} (\zeta) \right) & \\
-\end{aligned}$$
+\end{aligned}
+```
 
 ## Simulation results
 
