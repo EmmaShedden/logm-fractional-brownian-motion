@@ -41,39 +41,24 @@ $$\mathbb{E}(\xi_k) = \mathbb{E}[B_k^H - B_{k-1}^H] = \mathbb{E}[B_k^H] - \mathb
 
 ```math
 \begin{aligned}
-\text{Cov}(\xi_i, ~ \xi_j) &= \text{Cov}(B_i^H - B_{i-1}^H, ~ B_j^H - B_{j-1}^H)
-    & \text{definition of } \xi \\
- &= \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - \mathbb{E} \left[B_i^H - B_{i-1}^H \right] \cdot \mathbb{E} \left[B_j^H - B_{j-1}^H \right]
-     & \text{definition of covariance} \\
- &= \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - \left(\mathbb{E} \left[B_i^H \right] - \mathbb{E} \left[B_{i-1}^H \right] \right) \cdot \left(\mathbb{E} \left[B_j^H \right] - \mathbb{E} \left[B_{j-1}^H \right] \right) 
-    & \text{linearity of expectation} \\
- &= \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - (0 - 0) (0 - 0) 
-    & B^H \text{ is centered by definition} \\
-&= \mathbb{E} \left[B_i^H B_j^H - B_i^H B_{j-1}^H - B_{i-1}^H B_j^H + B_{i-1}^H B_{j-1}^H \right] 
-    & \\
- &= \mathbb{E} \left[B_i^H B_j^H \right] - \mathbb{E} \left[B_i^H B_{j-1}^H \right] - \mathbb{E} \left[B_{i-1}^H B_j^H \right] + \mathbb{E} \left[B_{i-1}^H B_{j-1}^H \right] 
-    & \text{linearity of expectation} \\
- &=                 \frac 1 2 \left(i^{2H} + j^{2H} - \left| i - j \right|^{2H} \right) & \\
-  & \hspace2ex    - \frac 1 2 \left(i^{2H} + (j-1)^{2H} - \left| i - (j-1) \right|^{2H} \right) & \\
-  & \hspace2ex    - \frac 1 2 \left((i-1)^{2H} + j^{2H} - \left| (i-1) - j \right|^{2H} \right)  & \\
-  & \hspace2ex    + \frac 1 2 \left((i-1)^{2H} + (j-1)^{2H} - \left| (i-1) - (j-1) \right|^{2H} \right)
-    & \text{definition of fBm} \\
- &= \frac 1 2 \left(- | i - j |^{2H}  +  | i - (j-1) |^{2H}  +  | (i-1) - j |^{2H}  -  | (i-1) - (j-1) |^{2H} \right) 
-    & \\
- &= \frac 1 2 \left(-2 | i - j |^{2H}  +  | i - (j-1) |^{2H}  +  | (i-1) - j |^{2H} \right) 
-    & \\
- &= \frac 1 2 \left(-2 | i-j |^{2H}  +  | i-j+1 |^{2H}  +  | i-j-1 |^{2H} \right) 
-    & \\
- &= \frac 1 2 \left(-2 | i-j |^{2H}  +  | i-j+1 |^{2H}  +  | i-j-1 |^{2H} \right)
-    & (\*) \\
- &= \frac 1 2 \left(-2 n^{2H}  +  (n+1)^{2H}  +  (n-1)^{2H} \right)
-    & \text{where } n := |i-j| \text{, } i \neq j \in I_1 \\
- \text{and ~ Cov} (\xi_i, ~ \xi_i) &= \frac 1 2 \left(-2 | i-i |^{2H}  +  | i-i+1 |^{2H}  +  | i-i-1 |^{2H} \right)
-    & \text{same as above, up to } (\*); ~ j := i \\
- &= \frac 1 2 \left( 1^{2H} + 1^{2H} \right)
-    & \\
- &= 1
-    & \text{where } i \in I_1 \\
+\text{Cov}(\xi_i, ~ \xi_j) &= \text{Cov}(B_i^H - B_{i-1}^H, ~ B_j^H - B_{j-1}^H) & \text{definition of } \xi \\
+& = \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - \mathbb{E} \left[B_i^H - B_{i-1}^H \right] \cdot \mathbb{E} \left[B_j^H - B_{j-1}^H \right] & \text{definition of covariance} \\
+& = \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - \left(\mathbb{E} \left[B_i^H \right] - \mathbb{E} \left[B_{i-1}^H \right] \right) \cdot \left(\mathbb{E} \left[B_j^H \right] - \mathbb{E} \left[B_{j-1}^H \right] \right) & \text{linearity of expectation} \\
+& = \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - (0 - 0) (0 - 0) & B^H \text{ is centered by definition} \\
+& = \mathbb{E} \left[B_i^H B_j^H - B_i^H B_{j-1}^H - B_{i-1}^H B_j^H + B_{i-1}^H B_{j-1}^H \right] & \\
+& = \mathbb{E} \left[B_i^H B_j^H \right] - \mathbb{E} \left[B_i^H B_{j-1}^H \right] - \mathbb{E} \left[B_{i-1}^H B_j^H \right] + \mathbb{E} \left[B_{i-1}^H B_{j-1}^H \right] & \text{linearity of expectation} \\
+& = \frac 1 2 \left(i^{2H} + j^{2H} - \left| i - j \right|^{2H} \right) & \\
+& \hspace2ex    - \frac 1 2 \left(i^{2H} + (j-1)^{2H} - \left| i - (j-1) \right|^{2H} \right) & \\
+& \hspace2ex    - \frac 1 2 \left((i-1)^{2H} + j^{2H} - \left| (i-1) - j \right|^{2H} \right)  & \\
+& \hspace2ex    + \frac 1 2 \left((i-1)^{2H} + (j-1)^{2H} - \left| (i-1) - (j-1) \right|^{2H} \right) & \text{definition of fBm} \\
+& = \frac 1 2 \left(- | i - j |^{2H}  +  | i - (j-1) |^{2H}  +  | (i-1) - j |^{2H}  -  | (i-1) - (j-1) |^{2H} \right) & \\
+& = \frac 1 2 \left(-2 | i - j |^{2H}  +  | i - (j-1) |^{2H}  +  | (i-1) - j |^{2H} \right) & \\
+& = \frac 1 2 \left(-2 | i-j |^{2H}  +  | i-j+1 |^{2H}  +  | i-j-1 |^{2H} \right) & \\
+& = \frac 1 2 \left(-2 | i-j |^{2H}  +  | i-j+1 |^{2H}  +  | i-j-1 |^{2H} \right) & (*) \\
+& = \frac 1 2 \left(-2 n^{2H}  +  (n+1)^{2H}  +  (n-1)^{2H} \right) & \text{where } n := |i-j| \text{, } i \neq j \in I_1 \\
+\text{and ~ Cov} (\xi_i, ~ \xi_i) & = \frac 1 2 \left(-2 | i-i |^{2H}  +  | i-i+1 |^{2H}  +  | i-i-1 |^{2H} \right) & \text{same as above, up to } (*); ~ j := i \\
+& = \frac 1 2 \left( 1^{2H} + 1^{2H} \right) & \\
+& = 1 & \text{where } i \in I_1
 \end{aligned}
 ```
 
@@ -85,14 +70,16 @@ $$\mathbb{E}(\xi_k) = \mathbb{E}[B_k^H - B_{k-1}^H] = \mathbb{E}[B_k^H] - \mathb
 - Let $\rho_H(n) := \text{cov} \left(\xi_1, ~ \xi_{n+1} \right) = \text{cov} \left(\xi_i, ~ \xi_{j} \right) ~~ \forall i, j \in I_1$ such that $|i-j| = n$ as calculated above.
     - So all the principle diagonal elements are $\rho_H(0) = 1$, all the super-diagonal and sub-diagonal elements are $\rho_H(1)$, the next two diagonals have $\rho_H(2)$, and so on:
 
-$$ \text{cov}(\xi) = \begin{pmatrix}
+```math
+\text{cov}(\xi) = \begin{pmatrix}
 1           & \rho_H(1)   & \rho_H(2)   & \cdots & \rho_H(N-2)  & \rho_H(N-1)   \\
 \rho_H(1)   & 1           & \rho_H(1)   & \cdots & \rho_H(N-3)  & \rho_H(N-2)   \\
 \rho_H(2)   & \rho_H(1)   & 1           & \cdots & \rho_H(N-4)  & \rho_H(N-3)   \\
 \vdots      & \vdots      & \vdots      & \ddots & \vdots       & \vdots        \\
 \rho_H(N-2) & \rho_H(N-3) & \rho_H(N-4) & \cdots & 1            & \rho_H(1)     \\
 \rho_H(N-1) & \rho_H(N-2) & \rho_H(N-3) & \cdots & \rho_H(1)    & 1             \\
-\end{pmatrix}$$
+\end{pmatrix}
+```
 
 - It is a fact, which we do not prove here, that the matrix $\text{cov}(\xi)$ is positive definite, so it has positive, real eigenvalues.
 
@@ -101,12 +88,14 @@ $$ \text{cov}(\xi) = \begin{pmatrix}
 
 - Let the coefficients $c_k$ for $k \in \lbrace 0, \cdots, M-1 \rbrace$ be defined as:
 
-$$\begin{aligned}
+```math
+\begin{aligned}
 c_0 &= 1, & \\
 c_k &= \rho_H(k), & 1 \leq k \leq N-1  \\
 c_k &= \rho_H(M-k), & N \leq k \leq M-1 \\
 \text{which imply } ~~~ c_{M-k} &= \rho_H(k), & 1 \leq k \leq N-1
-\end{aligned}$$
+\end{aligned}
+```
 
 - Let $C$ denote the circulant matrix on $c_0, ~ \cdots, ~ c_{M-1}$:
 
