@@ -1,7 +1,11 @@
 # Fractional Brownian motion
 
 ## Description (TODO)
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Fractional Brownian motion is the generalization of standard Brownian motion. One significantly different property of fractional Brownian motion is that its increments are dependent, meaning that the event at a certain time point has to do with what happened in the past. Fractional Brownian motion has been applied in various fields such as [medical imaging and robotics](https://dlib.bc.edu/islandora/object/bc-ir:102098), we can even use fractional Brownian motion for [composing music](https://www.sciencedirect.com/science/article/pii/0167278989902200)!
+
+This repository contains:
+- Implementations of the Wood-Chan Method (Python) for simulating fractional Brownian.
+- Implementations of the Fast Fourier Transformation algorithm (Python) which our simulations rely on for efficiency over naive approaches.
 
 ## Installation
 See our installation instructions [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion#installation).
@@ -10,7 +14,10 @@ See our installation instructions [here](https://gitlab.eecs.umich.edu/logm/wn23
 Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
 ## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+If you encounter trouble running our code, you can email the following:
+- xiaoranc@umich.edu
+- lesteven@umich.edu
+- emshedde@umich.edu 
 
 ## Authors and acknowledgment
 __Authors:__ Xiaoran Chen, Seok Jin Lee, & Emma Shedden
