@@ -149,9 +149,9 @@ $$q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}$$
 ```math
 \begin{aligned}
 (Qa)_j &= \sum_{k=0}^{M-1} q_{jk} a_k
- = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} a_k \exp {\left( -2\pi i \frac{jk}{M} \right)} & \text{and} \\\
+ = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} a_k \exp {\left( -2\pi i \frac{jk}{M} \right)} & \text{and} \\
 (Q^* a)_j &= \sum_{k=0}^{M-1} \overline{q_{jk}} a_k
- = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} a_k \exp {\left( 2\pi i \frac{jk}{M} \right)} & \\\
+ = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} a_k \exp {\left( 2\pi i \frac{jk}{M} \right)} & \\
 \end{aligned}
 ```
 
@@ -192,15 +192,15 @@ $$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k
 \begin{aligned}
 \sum_{j=0}^{n-1} \exp \left (2 \pi i \frac{jm}{n} \right )
  &= \begin{cases} 
-        \displaystyle{\sum_{j=0}^{n-1} 1^{jm / n}}, & n ~ | ~ m, \text{ i.e. } \frac m n \in \mathbb{Z} \\\
-         &  \\\
-        \displaystyle{ \frac{1 - \exp \lbrace2 \pi i m\rbrace }{1-\exp \lbrace 2 \pi i \frac{m}{n} \rbrace } }, & n ~ \nmid ~ m \\\
-    \end{cases} & \text{by the geometric series formula} \\\
+        \displaystyle{\sum_{j=0}^{n-1} 1^{jm / n}}, & n ~ | ~ m, \text{ i.e. } \frac m n \in \mathbb{Z} \\
+         &  \\
+        \displaystyle{ \frac{1 - \exp \lbrace2 \pi i m\rbrace }{1-\exp \lbrace 2 \pi i \frac{m}{n} \rbrace } }, & n ~ \nmid ~ m \\
+    \end{cases} & \text{by the geometric series formula} \\
  &= \begin{cases} 
-        n, & n ~ | ~ m, \\\
-         &  \\\
-        \displaystyle{ \frac{1 - 1^{m} }{1-\exp \lbrace 2 \pi i \frac{m}{n} \rbrace } }, & n ~ \nmid ~ m \\\
-    \end{cases} & \text{note the denominator is nonzero by assumption} \\\
+        n, & n ~ | ~ m, \\
+         &  \\
+        \displaystyle{ \frac{1 - 1^{m} }{1-\exp \lbrace 2 \pi i \frac{m}{n} \rbrace } }, & n ~ \nmid ~ m \\
+    \end{cases} & \text{note the denominator is nonzero by assumption} \\
  &= n \delta_{n ~ | ~ m} & \text{for any } n \neq 0, m \in \mathbb{Z} \hspace2ex (\dagger)
 \end{aligned}
 ```
