@@ -39,7 +39,8 @@ $$\mathbb{E}(\xi_k) = \mathbb{E}[B_k^H - B_{k-1}^H] = \mathbb{E}[B_k^H] - \mathb
 ### Covariance matrix of $\xi$
 - We can calculate the covariance function (matrix) of $\xi$ using its relationship to $B^H$:
 
-$$\begin{aligned}
+```math
+\begin{aligned}
 \text{Cov}(\xi_i, ~ \xi_j) &= \text{Cov}(B_i^H - B_{i-1}^H, ~ B_j^H - B_{j-1}^H)
     & \text{definition of } \xi \\
  &= \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - \mathbb{E} \left[B_i^H - B_{i-1}^H \right] \cdot \mathbb{E} \left[B_j^H - B_{j-1}^H \right]
@@ -73,7 +74,8 @@ $$\begin{aligned}
     & \\
  &= 1
     & \text{where } i \in I_1 \\
-\end{aligned}$$
+\end{aligned}
+```
 
 - Observe that the covariance depends only on the difference between the timestamps, not their values; in other words, the sequence $\xi_1, \cdots, \xi_N$ is a stationary Gaussian process.
     - This is essentially a special case of the proof that fBm has stationary increments; the general version is not much different.
