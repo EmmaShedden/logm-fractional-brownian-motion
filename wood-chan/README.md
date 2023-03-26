@@ -2,6 +2,10 @@
 
 See my [GitHub](https://github.com/EmmaShedden/log-m/tree/master/wood-chan) page for a version of this README that renders correctly. Differences between the way GitHub and GitLab render Markdown equations mean that a large fraction of this page is not reader-friendly, but the GitHub version works fine.
 
+A matrix can be written as stem:[[[a,b\],[c,d\]\]((n),(k))].
+
+$\begin{pmatrix} 1           & \rho_H(1)   & \rho_H(2)   & \cdots & \rho_H(N-2)  & \rho_H(N-1) \end{pmatrix}$
+
 ## Mathematical foundation
 Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https://drive.google.com/file/d/1BEjP1AHJWwW1HtJDZcKPLzWJ1wXDoxcW/view)
 
@@ -22,12 +26,7 @@ $$ \text{Cov}(B^H_s, B^H_t) = \mathbb{E}[B^H_s B^H_t] = \frac{1}{2}(t^{2H} + s^{
 
 - Now, $\xi := (\xi_1, \cdots, \xi_N)$ is a centered Gaussian vector:
 
-$$ \mathbb{E}(\xi_k)
- = \mathbb{E}[B_k^H - B_{k-1}^H]
- = \mathbb{E}[B_k^H] - \mathbb{E}[B_{k-1}^H]
- = N^{-2H} \left ( \mathbb{E}[B_{t_k}^H] - \mathbb{E}[B_{t_{k-1}}^H] \right )
- = N^{-2H} \left ( 0 - 0 \right )
- = 0 ~~ \forall k \in I_1 $$
+$$\mathbb{E}(\xi_k) = \mathbb{E}[B_k^H - B_{k-1}^H] = \mathbb{E}[B_k^H] - \mathbb{E}[B_{k-1}^H] = N^{-2H} \left ( \mathbb{E}[B_{t_k}^H] - \mathbb{E}[B_{t_{k-1}}^H] \right ) = N^{-2H} \left ( 0 - 0 \right ) = 0 ~~ \forall k \in I_1$$
 
 - $\xi$ represents fGn, or fractional Gaussian noise.
 
