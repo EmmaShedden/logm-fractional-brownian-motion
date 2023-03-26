@@ -4,7 +4,9 @@ See my [GitHub](https://github.com/EmmaShedden/log-m/tree/master/wood-chan) page
 
 A matrix can be written as stem:[[[a,b\],[c,d\]\]((n),(k))].
 
-$\begin{pmatrix} 1           & \rho_H(1)   & \rho_H(2)   & \cdots & \rho_H(N-2)  & \rho_H(N-1) \end{pmatrix}$
+```math
+\begin{pmatrix} 1           & \rho_H(1)   & \rho_H(2)   & \cdots & \rho_H(N-2)  & \rho_H(N-1) \end{pmatrix}
+```
 
 ## Mathematical foundation
 Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https://drive.google.com/file/d/1BEjP1AHJWwW1HtJDZcKPLzWJ1wXDoxcW/view)
