@@ -4,7 +4,7 @@ import cmath
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# calculate rho_H(n)
+# Calculate rho_H(n)
 # n : integer in 0..N-1
 def rho(n, H):
     assert(type(n) is int and n >= 0)
@@ -13,7 +13,7 @@ def rho(n, H):
         return 1.0
     return (-2*n**(2*H) + (n+1)**(2*H) + (n-1)**(2*H))/2
 
-# calculate c_0, ..., c_{M-1} where M = 2(N-1)
+# Calculate c_0, ..., c_{M-1} where M = 2(N-1)
 # N : integer in R^+
 def circulant_coefficients(N, M, H):
     assert(N > 0 and type(M) is int)
@@ -21,11 +21,11 @@ def circulant_coefficients(N, M, H):
     upper = np.array([rho(M-n, H) for n in range(N, M)], dtype=np.float64) # N - 2 of these
     return np.concatenate((lower, upper))
 
-# given a complex array, take the real part
+# Given a complex array, take the real part
 def get_reals(arr):
     return np.array([arr[i].real for i in range(len(arr))])
 
-# driver for all the simulation steps
+# Driver for all the simulation steps of the Wood-Chan algorithm
 def simulate(N, M, H):
     circ_coeffs = circulant_coefficients(N, M, H)
     Lambda = get_reals(fft(circ_coeffs))
@@ -38,7 +38,7 @@ def simulate(N, M, H):
     fBm = np.cumsum(increments) # xi_1, ..., xi_N
     return np.concatenate(([0.0], fBm))
 
-# plot all the fBms next to each other
+# Plot all the fBms next to each other (vertically)
 def plot(Hs, Ns, Ts, fBms):
     assert(len(Hs) == len(Ns) and len(Ns) == len(Ts) and len(Ts) == len(fBms))
     numrows = len(Ns)
@@ -59,17 +59,40 @@ def plot(Hs, Ns, Ts, fBms):
 
     plt.savefig("fBm.png")
 
+# Plot all the fBms next to each other (horizontally)
+# This generally doesn't look as nice, but if you want to use it you can replace
+# the call to plot() in main() with a call to plot_horizontal(); you may need to
+# manually adjust the dimensions & spacing depending on the number of plots generated
+def plot_horizontal(Hs, Ns, Ts, fBms):
+    assert(len(Hs) == len(Ns) and len(Ns) == len(Ts) and len(Ts) == len(fBms))
+    numcols = len(Ns)
+    fig, axs = plt.subplots(1, numcols, figsize=(10*numcols, 6), sharex=True)
+    
+    for n in range(numcols):
+        axs[n].plot(Ts[n], fBms[n], label="H={:.2f}, N={}".format(Hs[n], Ns[n]))
+        axs[n].legend(fontsize = 18)
+
+    fig.suptitle("Paths of fBm for different values of H", fontsize=24)
+    fig.subplots_adjust(wspace=0.1, hspace=0.1, top=0.9, bottom=0.05, left=0.05, right=0.95)
+
+    for ax in axs.flat:
+        ax.set_xlabel("Time (over the unit interval)", fontsize=18)
+    
+    axs[0].set_ylabel("Particle position", fontsize=18)
+
+    plt.savefig("fBm.png")
+
 def main():
-    epsilon = 0.2 # distance between Hs
-    # q : int in (0, infty)
-    q = 10
+    ##### Constants and settings #####
+    epsilon = 0.249 # distance between H's
+    q = 10 # q : log of the number of points on the time interval, int in (0, infty)
+    ##################################
 
     N = 2**q + 1 # 1/delta where delta is the granularity of the discretized time interval
     M = 2**(q+1) #2(N-1)
     delta = 1/float(N)
 
-    # H : float in (0, 1)
-    Hs = np.arange(epsilon, 1, epsilon)
+    Hs = np.arange(epsilon, 1, epsilon) # H : float in (0, 1)
     n = len(Hs) # number of trials
     Ns = np.full((n, ), N) # for now we won't vary this parameter
 
