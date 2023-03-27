@@ -3,15 +3,13 @@
 ## Description
 This project is a continuation of our work simulating standard Brownian motions, which you can find [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion).
 
-Fractional Brownian motion (fBm) is a generalization of classical Brownian motions and was first proposed by Mandelbrot and Van Ness in 1968 [[1](https://epubs.siam.org/doi/10.1137/1010093)]. Whereas classical Brownian motions describe continuous stochastic processes with independence of increments, in general, fBm exhibits long-range independence between increments. This allows it to model a larger class of real-world phenomena, but also makes it much more difficult so simulate accurately and efficiently.
+Fractional Brownian motion (fBm) is a generalization of classical Brownian motions and was first proposed by Mandelbrot and Van Ness in 1968 [[1](https://epubs.siam.org/doi/10.1137/1010093)]. Whereas classical Brownian motions describe continuous stochastic processes with independence of increments, in general, fBm exhibits long-range independence between increments. This allows it to model a larger class of real-world phenomena, but also makes it much more difficult so simulate accurately and efficiently. Fractional Brownian motion has been applied in various fields such as [medical imaging and robotics](https://dlib.bc.edu/islandora/object/bc-ir:102098), we can even use fractional Brownian motion for [composing music](https://www.sciencedirect.com/science/article/pii/0167278989902200)!
 
 This repository contains:
 - Implementation of the [Wood-Chan simulation method](https://drive.google.com/file/d/1BEjP1AHJWwW1HtJDZcKPLzWJ1wXDoxcW/view) for fractional Brownian motions (Python).
 - Implementation of the Fast Fourier Transform (FFT) and inverse FFT on powers of two, a useful algorithm which our simulation method relies on for efficiency over naive approaches (Python).
     - Randomized unit tests of this implementation against standard library implementations in `scikit` and `numpy`.
     - This is for learning purposes; the standard library functions are used in our simulation code.
-
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
 ## Installation
 See our installation instructions [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion#installation).
