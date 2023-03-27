@@ -14,7 +14,7 @@ This repository contains:
 ## Installation
 See our installation instructions [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion#installation).
 
-## Usage (TODO)
+## Usage
 Usage instructions for all programs within this repository. Make sure you have completed the relevant installation for the files you want to run.
 
 All instructions begin in the command line at the top level of the repo.
@@ -36,6 +36,9 @@ Depending on your setup, you may need to replace the command `python` with `pyth
 3. To simulate different $H$ values or change the granularity of the time interval, open `main.py` in your editor and scroll down to the definition of `main()`.
     - Change `epsilon` to sample different $H$ values.
     - Change `q` to change the granularity of discretization of the time interval.
+
+#### Example output
+<p align="center"><img width="600" src="/wood-chan/fBm_9.png"></p>
 
 ## Support
 If you encounter trouble running our code, you can email the following:
