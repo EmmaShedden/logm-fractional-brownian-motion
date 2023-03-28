@@ -1,0 +1,801 @@
+
+0, 1841.91,msec,task-clock:u,1841910484,100.00,0.256,CPUs utilized
+0,,context-switches:u,1841910484,100.00,0.000,/sec
+0,,cpu-migrations:u,1841910484,100.00,0.000,/sec
+16906,,page-faults:u,1841910484,100.00,9.179,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1925.05,msec,task-clock:u,1925053646,100.00,0.270,CPUs utilized
+0,,context-switches:u,1925053646,100.00,0.000,/sec
+0,,cpu-migrations:u,1925053646,100.00,0.000,/sec
+19567,,page-faults:u,1925053646,100.00,10.164,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1916.33,msec,task-clock:u,1916325360,100.00,0.230,CPUs utilized
+0,,context-switches:u,1916325360,100.00,0.000,/sec
+0,,cpu-migrations:u,1916325360,100.00,0.000,/sec
+26234,,page-faults:u,1916325360,100.00,13.690,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1854.67,msec,task-clock:u,1854671463,100.00,0.236,CPUs utilized
+0,,context-switches:u,1854671463,100.00,0.000,/sec
+0,,cpu-migrations:u,1854671463,100.00,0.000,/sec
+16931,,page-faults:u,1854671463,100.00,9.129,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1934.47,msec,task-clock:u,1934467527,100.00,0.267,CPUs utilized
+0,,context-switches:u,1934467527,100.00,0.000,/sec
+0,,cpu-migrations:u,1934467527,100.00,0.000,/sec
+25176,,page-faults:u,1934467527,100.00,13.014,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1956.10,msec,task-clock:u,1956101964,100.00,0.252,CPUs utilized
+0,,context-switches:u,1956101964,100.00,0.000,/sec
+0,,cpu-migrations:u,1956101964,100.00,0.000,/sec
+16888,,page-faults:u,1956101964,100.00,8.633,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1958.85,msec,task-clock:u,1958848996,100.00,0.258,CPUs utilized
+0,,context-switches:u,1958848996,100.00,0.000,/sec
+0,,cpu-migrations:u,1958848996,100.00,0.000,/sec
+16969,,page-faults:u,1958848996,100.00,8.663,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1893.32,msec,task-clock:u,1893320752,100.00,0.247,CPUs utilized
+0,,context-switches:u,1893320752,100.00,0.000,/sec
+0,,cpu-migrations:u,1893320752,100.00,0.000,/sec
+16874,,page-faults:u,1893320752,100.00,8.912,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 1831.92,msec,task-clock:u,1831922839,100.00,0.260,CPUs utilized
+0,,context-switches:u,1831922839,100.00,0.000,/sec
+0,,cpu-migrations:u,1831922839,100.00,0.000,/sec
+16875,,page-faults:u,1831922839,100.00,9.212,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+0, 2013.92,msec,task-clock:u,2013921502,100.00,0.250,CPUs utilized
+0,,context-switches:u,2013921502,100.00,0.000,/sec
+0,,cpu-migrations:u,2013921502,100.00,0.000,/sec
+16912,,page-faults:u,2013921502,100.00,8.398,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1983.96,msec,task-clock:u,1983962807,100.00,0.263,CPUs utilized
+0,,context-switches:u,1983962807,100.00,0.000,/sec
+0,,cpu-migrations:u,1983962807,100.00,0.000,/sec
+16892,,page-faults:u,1983962807,100.00,8.514,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1933.11,msec,task-clock:u,1933107099,100.00,0.260,CPUs utilized
+0,,context-switches:u,1933107099,100.00,0.000,/sec
+0,,cpu-migrations:u,1933107099,100.00,0.000,/sec
+23806,,page-faults:u,1933107099,100.00,12.315,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1840.78,msec,task-clock:u,1840778184,100.00,0.242,CPUs utilized
+0,,context-switches:u,1840778184,100.00,0.000,/sec
+0,,cpu-migrations:u,1840778184,100.00,0.000,/sec
+16888,,page-faults:u,1840778184,100.00,9.174,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1843.60,msec,task-clock:u,1843599581,100.00,0.272,CPUs utilized
+0,,context-switches:u,1843599581,100.00,0.000,/sec
+0,,cpu-migrations:u,1843599581,100.00,0.000,/sec
+16875,,page-faults:u,1843599581,100.00,9.153,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1932.62,msec,task-clock:u,1932621396,100.00,0.267,CPUs utilized
+0,,context-switches:u,1932621396,100.00,0.000,/sec
+0,,cpu-migrations:u,1932621396,100.00,0.000,/sec
+17930,,page-faults:u,1932621396,100.00,9.278,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1857.21,msec,task-clock:u,1857206260,100.00,0.272,CPUs utilized
+0,,context-switches:u,1857206260,100.00,0.000,/sec
+0,,cpu-migrations:u,1857206260,100.00,0.000,/sec
+16915,,page-faults:u,1857206260,100.00,9.108,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1697.77,msec,task-clock:u,1697769303,100.00,0.268,CPUs utilized
+0,,context-switches:u,1697769303,100.00,0.000,/sec
+0,,cpu-migrations:u,1697769303,100.00,0.000,/sec
+16863,,page-faults:u,1697769303,100.00,9.932,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1742.09,msec,task-clock:u,1742093328,100.00,0.271,CPUs utilized
+0,,context-switches:u,1742093328,100.00,0.000,/sec
+0,,cpu-migrations:u,1742093328,100.00,0.000,/sec
+16906,,page-faults:u,1742093328,100.00,9.704,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1770.47,msec,task-clock:u,1770470781,100.00,0.277,CPUs utilized
+0,,context-switches:u,1770470781,100.00,0.000,/sec
+0,,cpu-migrations:u,1770470781,100.00,0.000,/sec
+16851,,page-faults:u,1770470781,100.00,9.518,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+1, 1809.45,msec,task-clock:u,1809447026,100.00,0.251,CPUs utilized
+0,,context-switches:u,1809447026,100.00,0.000,/sec
+0,,cpu-migrations:u,1809447026,100.00,0.000,/sec
+17342,,page-faults:u,1809447026,100.00,9.584,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1847.28,msec,task-clock:u,1847280535,100.00,0.255,CPUs utilized
+0,,context-switches:u,1847280535,100.00,0.000,/sec
+0,,cpu-migrations:u,1847280535,100.00,0.000,/sec
+16884,,page-faults:u,1847280535,100.00,9.140,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1792.72,msec,task-clock:u,1792720641,100.00,0.258,CPUs utilized
+0,,context-switches:u,1792720641,100.00,0.000,/sec
+0,,cpu-migrations:u,1792720641,100.00,0.000,/sec
+16946,,page-faults:u,1792720641,100.00,9.453,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1841.02,msec,task-clock:u,1841019454,100.00,0.253,CPUs utilized
+0,,context-switches:u,1841019454,100.00,0.000,/sec
+0,,cpu-migrations:u,1841019454,100.00,0.000,/sec
+16889,,page-faults:u,1841019454,100.00,9.174,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1878.69,msec,task-clock:u,1878685588,100.00,0.256,CPUs utilized
+0,,context-switches:u,1878685588,100.00,0.000,/sec
+0,,cpu-migrations:u,1878685588,100.00,0.000,/sec
+16916,,page-faults:u,1878685588,100.00,9.004,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1872.24,msec,task-clock:u,1872242947,100.00,0.272,CPUs utilized
+0,,context-switches:u,1872242947,100.00,0.000,/sec
+0,,cpu-migrations:u,1872242947,100.00,0.000,/sec
+19660,,page-faults:u,1872242947,100.00,10.501,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1958.90,msec,task-clock:u,1958901171,100.00,0.265,CPUs utilized
+0,,context-switches:u,1958901171,100.00,0.000,/sec
+0,,cpu-migrations:u,1958901171,100.00,0.000,/sec
+17401,,page-faults:u,1958901171,100.00,8.883,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1962.85,msec,task-clock:u,1962846778,100.00,0.272,CPUs utilized
+0,,context-switches:u,1962846778,100.00,0.000,/sec
+0,,cpu-migrations:u,1962846778,100.00,0.000,/sec
+25446,,page-faults:u,1962846778,100.00,12.964,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 2005.02,msec,task-clock:u,2005017316,100.00,0.263,CPUs utilized
+0,,context-switches:u,2005017316,100.00,0.000,/sec
+0,,cpu-migrations:u,2005017316,100.00,0.000,/sec
+20048,,page-faults:u,2005017316,100.00,9.999,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1829.36,msec,task-clock:u,1829357995,100.00,0.253,CPUs utilized
+0,,context-switches:u,1829357995,100.00,0.000,/sec
+0,,cpu-migrations:u,1829357995,100.00,0.000,/sec
+22031,,page-faults:u,1829357995,100.00,12.043,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+2, 1878.73,msec,task-clock:u,1878726063,100.00,0.262,CPUs utilized
+0,,context-switches:u,1878726063,100.00,0.000,/sec
+0,,cpu-migrations:u,1878726063,100.00,0.000,/sec
+16957,,page-faults:u,1878726063,100.00,9.026,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 1884.16,msec,task-clock:u,1884160285,100.00,0.264,CPUs utilized
+0,,context-switches:u,1884160285,100.00,0.000,/sec
+0,,cpu-migrations:u,1884160285,100.00,0.000,/sec
+18263,,page-faults:u,1884160285,100.00,9.693,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2126.27,msec,task-clock:u,2126266125,100.00,0.257,CPUs utilized
+0,,context-switches:u,2126266125,100.00,0.000,/sec
+0,,cpu-migrations:u,2126266125,100.00,0.000,/sec
+19573,,page-faults:u,2126266125,100.00,9.205,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2121.07,msec,task-clock:u,2121072417,100.00,0.264,CPUs utilized
+0,,context-switches:u,2121072417,100.00,0.000,/sec
+0,,cpu-migrations:u,2121072417,100.00,0.000,/sec
+25208,,page-faults:u,2121072417,100.00,11.885,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2154.80,msec,task-clock:u,2154796960,100.00,0.231,CPUs utilized
+0,,context-switches:u,2154796960,100.00,0.000,/sec
+0,,cpu-migrations:u,2154796960,100.00,0.000,/sec
+20151,,page-faults:u,2154796960,100.00,9.352,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2063.45,msec,task-clock:u,2063450297,100.00,0.208,CPUs utilized
+0,,context-switches:u,2063450297,100.00,0.000,/sec
+0,,cpu-migrations:u,2063450297,100.00,0.000,/sec
+16894,,page-faults:u,2063450297,100.00,8.187,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2068.51,msec,task-clock:u,2068514707,100.00,0.213,CPUs utilized
+0,,context-switches:u,2068514707,100.00,0.000,/sec
+0,,cpu-migrations:u,2068514707,100.00,0.000,/sec
+18281,,page-faults:u,2068514707,100.00,8.838,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2072.35,msec,task-clock:u,2072354148,100.00,0.190,CPUs utilized
+0,,context-switches:u,2072354148,100.00,0.000,/sec
+0,,cpu-migrations:u,2072354148,100.00,0.000,/sec
+24622,,page-faults:u,2072354148,100.00,11.881,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2076.74,msec,task-clock:u,2076739405,100.00,0.211,CPUs utilized
+0,,context-switches:u,2076739405,100.00,0.000,/sec
+0,,cpu-migrations:u,2076739405,100.00,0.000,/sec
+16886,,page-faults:u,2076739405,100.00,8.131,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2193.82,msec,task-clock:u,2193818358,100.00,0.228,CPUs utilized
+0,,context-switches:u,2193818358,100.00,0.000,/sec
+0,,cpu-migrations:u,2193818358,100.00,0.000,/sec
+16888,,page-faults:u,2193818358,100.00,7.698,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+3, 2510.74,msec,task-clock:u,2510736482,100.00,0.248,CPUs utilized
+0,,context-switches:u,2510736482,100.00,0.000,/sec
+0,,cpu-migrations:u,2510736482,100.00,0.000,/sec
+27166,,page-faults:u,2510736482,100.00,10.820,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2261.94,msec,task-clock:u,2261938242,100.00,0.246,CPUs utilized
+0,,context-switches:u,2261938242,100.00,0.000,/sec
+0,,cpu-migrations:u,2261938242,100.00,0.000,/sec
+23056,,page-faults:u,2261938242,100.00,10.193,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2460.45,msec,task-clock:u,2460453123,100.00,0.245,CPUs utilized
+0,,context-switches:u,2460453123,100.00,0.000,/sec
+0,,cpu-migrations:u,2460453123,100.00,0.000,/sec
+20030,,page-faults:u,2460453123,100.00,8.141,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2042.59,msec,task-clock:u,2042588127,100.00,0.206,CPUs utilized
+0,,context-switches:u,2042588127,100.00,0.000,/sec
+0,,cpu-migrations:u,2042588127,100.00,0.000,/sec
+16885,,page-faults:u,2042588127,100.00,8.266,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2178.70,msec,task-clock:u,2178696013,100.00,0.206,CPUs utilized
+0,,context-switches:u,2178696013,100.00,0.000,/sec
+0,,cpu-migrations:u,2178696013,100.00,0.000,/sec
+16900,,page-faults:u,2178696013,100.00,7.757,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2281.68,msec,task-clock:u,2281677048,100.00,0.266,CPUs utilized
+0,,context-switches:u,2281677048,100.00,0.000,/sec
+0,,cpu-migrations:u,2281677048,100.00,0.000,/sec
+24994,,page-faults:u,2281677048,100.00,10.954,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2425.65,msec,task-clock:u,2425650400,100.00,0.234,CPUs utilized
+0,,context-switches:u,2425650400,100.00,0.000,/sec
+0,,cpu-migrations:u,2425650400,100.00,0.000,/sec
+25430,,page-faults:u,2425650400,100.00,10.484,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2206.41,msec,task-clock:u,2206413749,100.00,0.228,CPUs utilized
+0,,context-switches:u,2206413749,100.00,0.000,/sec
+0,,cpu-migrations:u,2206413749,100.00,0.000,/sec
+16946,,page-faults:u,2206413749,100.00,7.680,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2396.19,msec,task-clock:u,2396192433,100.00,0.242,CPUs utilized
+0,,context-switches:u,2396192433,100.00,0.000,/sec
+0,,cpu-migrations:u,2396192433,100.00,0.000,/sec
+16917,,page-faults:u,2396192433,100.00,7.060,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2299.71,msec,task-clock:u,2299712085,100.00,0.249,CPUs utilized
+0,,context-switches:u,2299712085,100.00,0.000,/sec
+0,,cpu-migrations:u,2299712085,100.00,0.000,/sec
+22711,,page-faults:u,2299712085,100.00,9.876,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+4, 2188.04,msec,task-clock:u,2188036526,100.00,0.235,CPUs utilized
+0,,context-switches:u,2188036526,100.00,0.000,/sec
+0,,cpu-migrations:u,2188036526,100.00,0.000,/sec
+23992,,page-faults:u,2188036526,100.00,10.965,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2031.75,msec,task-clock:u,2031745952,100.00,0.224,CPUs utilized
+0,,context-switches:u,2031745952,100.00,0.000,/sec
+0,,cpu-migrations:u,2031745952,100.00,0.000,/sec
+25003,,page-faults:u,2031745952,100.00,12.306,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2290.71,msec,task-clock:u,2290710464,100.00,0.240,CPUs utilized
+0,,context-switches:u,2290710464,100.00,0.000,/sec
+0,,cpu-migrations:u,2290710464,100.00,0.000,/sec
+16904,,page-faults:u,2290710464,100.00,7.379,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2542.28,msec,task-clock:u,2542281331,100.00,0.229,CPUs utilized
+0,,context-switches:u,2542281331,100.00,0.000,/sec
+0,,cpu-migrations:u,2542281331,100.00,0.000,/sec
+22776,,page-faults:u,2542281331,100.00,8.959,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2271.19,msec,task-clock:u,2271190513,100.00,0.279,CPUs utilized
+0,,context-switches:u,2271190513,100.00,0.000,/sec
+0,,cpu-migrations:u,2271190513,100.00,0.000,/sec
+17198,,page-faults:u,2271190513,100.00,7.572,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2312.71,msec,task-clock:u,2312713202,100.00,0.270,CPUs utilized
+0,,context-switches:u,2312713202,100.00,0.000,/sec
+0,,cpu-migrations:u,2312713202,100.00,0.000,/sec
+22610,,page-faults:u,2312713202,100.00,9.776,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2069.20,msec,task-clock:u,2069196160,100.00,0.276,CPUs utilized
+0,,context-switches:u,2069196160,100.00,0.000,/sec
+0,,cpu-migrations:u,2069196160,100.00,0.000,/sec
+22673,,page-faults:u,2069196160,100.00,10.957,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 1961.90,msec,task-clock:u,1961904415,100.00,0.215,CPUs utilized
+0,,context-switches:u,1961904415,100.00,0.000,/sec
+0,,cpu-migrations:u,1961904415,100.00,0.000,/sec
+24505,,page-faults:u,1961904415,100.00,12.490,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2038.72,msec,task-clock:u,2038721459,100.00,0.280,CPUs utilized
+0,,context-switches:u,2038721459,100.00,0.000,/sec
+0,,cpu-migrations:u,2038721459,100.00,0.000,/sec
+18401,,page-faults:u,2038721459,100.00,9.026,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2165.08,msec,task-clock:u,2165077390,100.00,0.250,CPUs utilized
+0,,context-switches:u,2165077390,100.00,0.000,/sec
+0,,cpu-migrations:u,2165077390,100.00,0.000,/sec
+21925,,page-faults:u,2165077390,100.00,10.127,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+5, 2253.87,msec,task-clock:u,2253865797,100.00,0.268,CPUs utilized
+0,,context-switches:u,2253865797,100.00,0.000,/sec
+0,,cpu-migrations:u,2253865797,100.00,0.000,/sec
+17579,,page-faults:u,2253865797,100.00,7.799,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2093.69,msec,task-clock:u,2093692798,100.00,0.255,CPUs utilized
+0,,context-switches:u,2093692798,100.00,0.000,/sec
+0,,cpu-migrations:u,2093692798,100.00,0.000,/sec
+24356,,page-faults:u,2093692798,100.00,11.633,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2252.54,msec,task-clock:u,2252543029,100.00,0.261,CPUs utilized
+0,,context-switches:u,2252543029,100.00,0.000,/sec
+0,,cpu-migrations:u,2252543029,100.00,0.000,/sec
+22846,,page-faults:u,2252543029,100.00,10.142,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2188.68,msec,task-clock:u,2188683869,100.00,0.242,CPUs utilized
+0,,context-switches:u,2188683869,100.00,0.000,/sec
+0,,cpu-migrations:u,2188683869,100.00,0.000,/sec
+19327,,page-faults:u,2188683869,100.00,8.830,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2123.67,msec,task-clock:u,2123671329,100.00,0.278,CPUs utilized
+0,,context-switches:u,2123671329,100.00,0.000,/sec
+0,,cpu-migrations:u,2123671329,100.00,0.000,/sec
+23973,,page-faults:u,2123671329,100.00,11.288,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2029.98,msec,task-clock:u,2029983703,100.00,0.281,CPUs utilized
+0,,context-switches:u,2029983703,100.00,0.000,/sec
+0,,cpu-migrations:u,2029983703,100.00,0.000,/sec
+25026,,page-faults:u,2029983703,100.00,12.328,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2097.32,msec,task-clock:u,2097320838,100.00,0.269,CPUs utilized
+0,,context-switches:u,2097320838,100.00,0.000,/sec
+0,,cpu-migrations:u,2097320838,100.00,0.000,/sec
+16902,,page-faults:u,2097320838,100.00,8.059,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2057.53,msec,task-clock:u,2057525942,100.00,0.279,CPUs utilized
+0,,context-switches:u,2057525942,100.00,0.000,/sec
+0,,cpu-migrations:u,2057525942,100.00,0.000,/sec
+19819,,page-faults:u,2057525942,100.00,9.632,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2165.10,msec,task-clock:u,2165102689,100.00,0.244,CPUs utilized
+0,,context-switches:u,2165102689,100.00,0.000,/sec
+0,,cpu-migrations:u,2165102689,100.00,0.000,/sec
+24969,,page-faults:u,2165102689,100.00,11.532,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2155.51,msec,task-clock:u,2155511482,100.00,0.286,CPUs utilized
+0,,context-switches:u,2155511482,100.00,0.000,/sec
+0,,cpu-migrations:u,2155511482,100.00,0.000,/sec
+22782,,page-faults:u,2155511482,100.00,10.569,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+6, 2000.38,msec,task-clock:u,2000379804,100.00,0.284,CPUs utilized
+0,,context-switches:u,2000379804,100.00,0.000,/sec
+0,,cpu-migrations:u,2000379804,100.00,0.000,/sec
+19580,,page-faults:u,2000379804,100.00,9.788,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 1971.70,msec,task-clock:u,1971702330,100.00,0.285,CPUs utilized
+0,,context-switches:u,1971702330,100.00,0.000,/sec
+0,,cpu-migrations:u,1971702330,100.00,0.000,/sec
+21096,,page-faults:u,1971702330,100.00,10.699,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 2142.17,msec,task-clock:u,2142170934,100.00,0.303,CPUs utilized
+0,,context-switches:u,2142170934,100.00,0.000,/sec
+0,,cpu-migrations:u,2142170934,100.00,0.000,/sec
+20033,,page-faults:u,2142170934,100.00,9.352,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 1865.04,msec,task-clock:u,1865039476,100.00,0.274,CPUs utilized
+0,,context-switches:u,1865039476,100.00,0.000,/sec
+0,,cpu-migrations:u,1865039476,100.00,0.000,/sec
+17856,,page-faults:u,1865039476,100.00,9.574,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 1786.85,msec,task-clock:u,1786848098,100.00,0.278,CPUs utilized
+0,,context-switches:u,1786848098,100.00,0.000,/sec
+0,,cpu-migrations:u,1786848098,100.00,0.000,/sec
+16930,,page-faults:u,1786848098,100.00,9.475,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 2060.87,msec,task-clock:u,2060866807,100.00,0.294,CPUs utilized
+0,,context-switches:u,2060866807,100.00,0.000,/sec
+0,,cpu-migrations:u,2060866807,100.00,0.000,/sec
+19468,,page-faults:u,2060866807,100.00,9.447,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 2091.79,msec,task-clock:u,2091791847,100.00,0.276,CPUs utilized
+0,,context-switches:u,2091791847,100.00,0.000,/sec
+0,,cpu-migrations:u,2091791847,100.00,0.000,/sec
+25960,,page-faults:u,2091791847,100.00,12.410,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 2137.93,msec,task-clock:u,2137934635,100.00,0.297,CPUs utilized
+0,,context-switches:u,2137934635,100.00,0.000,/sec
+0,,cpu-migrations:u,2137934635,100.00,0.000,/sec
+23997,,page-faults:u,2137934635,100.00,11.224,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 2051.93,msec,task-clock:u,2051926761,100.00,0.261,CPUs utilized
+0,,context-switches:u,2051926761,100.00,0.000,/sec
+0,,cpu-migrations:u,2051926761,100.00,0.000,/sec
+21365,,page-faults:u,2051926761,100.00,10.412,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 2074.71,msec,task-clock:u,2074714745,100.00,0.238,CPUs utilized
+0,,context-switches:u,2074714745,100.00,0.000,/sec
+0,,cpu-migrations:u,2074714745,100.00,0.000,/sec
+22667,,page-faults:u,2074714745,100.00,10.925,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+7, 2064.86,msec,task-clock:u,2064864411,100.00,0.260,CPUs utilized
+0,,context-switches:u,2064864411,100.00,0.000,/sec
+0,,cpu-migrations:u,2064864411,100.00,0.000,/sec
+20599,,page-faults:u,2064864411,100.00,9.976,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2137.81,msec,task-clock:u,2137814155,100.00,0.274,CPUs utilized
+0,,context-switches:u,2137814155,100.00,0.000,/sec
+0,,cpu-migrations:u,2137814155,100.00,0.000,/sec
+20680,,page-faults:u,2137814155,100.00,9.673,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2151.52,msec,task-clock:u,2151517350,100.00,0.247,CPUs utilized
+0,,context-switches:u,2151517350,100.00,0.000,/sec
+0,,cpu-migrations:u,2151517350,100.00,0.000,/sec
+19828,,page-faults:u,2151517350,100.00,9.216,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2061.61,msec,task-clock:u,2061609448,100.00,0.281,CPUs utilized
+0,,context-switches:u,2061609448,100.00,0.000,/sec
+0,,cpu-migrations:u,2061609448,100.00,0.000,/sec
+18822,,page-faults:u,2061609448,100.00,9.130,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2080.70,msec,task-clock:u,2080699005,100.00,0.266,CPUs utilized
+0,,context-switches:u,2080699005,100.00,0.000,/sec
+0,,cpu-migrations:u,2080699005,100.00,0.000,/sec
+21193,,page-faults:u,2080699005,100.00,10.186,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 1999.51,msec,task-clock:u,1999514137,100.00,0.256,CPUs utilized
+0,,context-switches:u,1999514137,100.00,0.000,/sec
+0,,cpu-migrations:u,1999514137,100.00,0.000,/sec
+19715,,page-faults:u,1999514137,100.00,9.860,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2025.83,msec,task-clock:u,2025828658,100.00,0.275,CPUs utilized
+0,,context-switches:u,2025828658,100.00,0.000,/sec
+0,,cpu-migrations:u,2025828658,100.00,0.000,/sec
+19729,,page-faults:u,2025828658,100.00,9.739,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2123.23,msec,task-clock:u,2123232573,100.00,0.271,CPUs utilized
+0,,context-switches:u,2123232573,100.00,0.000,/sec
+0,,cpu-migrations:u,2123232573,100.00,0.000,/sec
+18521,,page-faults:u,2123232573,100.00,8.723,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2199.15,msec,task-clock:u,2199154806,100.00,0.280,CPUs utilized
+0,,context-switches:u,2199154806,100.00,0.000,/sec
+0,,cpu-migrations:u,2199154806,100.00,0.000,/sec
+21897,,page-faults:u,2199154806,100.00,9.957,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2091.96,msec,task-clock:u,2091956606,100.00,0.255,CPUs utilized
+0,,context-switches:u,2091956606,100.00,0.000,/sec
+0,,cpu-migrations:u,2091956606,100.00,0.000,/sec
+22685,,page-faults:u,2091956606,100.00,10.844,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+8, 2111.89,msec,task-clock:u,2111890379,100.00,0.275,CPUs utilized
+0,,context-switches:u,2111890379,100.00,0.000,/sec
+0,,cpu-migrations:u,2111890379,100.00,0.000,/sec
+23345,,page-faults:u,2111890379,100.00,11.054,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2026.55,msec,task-clock:u,2026553894,100.00,0.263,CPUs utilized
+0,,context-switches:u,2026553894,100.00,0.000,/sec
+0,,cpu-migrations:u,2026553894,100.00,0.000,/sec
+25567,,page-faults:u,2026553894,100.00,12.616,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2089.55,msec,task-clock:u,2089549205,100.00,0.273,CPUs utilized
+0,,context-switches:u,2089549205,100.00,0.000,/sec
+0,,cpu-migrations:u,2089549205,100.00,0.000,/sec
+23988,,page-faults:u,2089549205,100.00,11.480,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2049.42,msec,task-clock:u,2049417849,100.00,0.277,CPUs utilized
+0,,context-switches:u,2049417849,100.00,0.000,/sec
+0,,cpu-migrations:u,2049417849,100.00,0.000,/sec
+20563,,page-faults:u,2049417849,100.00,10.034,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2025.56,msec,task-clock:u,2025562540,100.00,0.266,CPUs utilized
+0,,context-switches:u,2025562540,100.00,0.000,/sec
+0,,cpu-migrations:u,2025562540,100.00,0.000,/sec
+23822,,page-faults:u,2025562540,100.00,11.761,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2300.71,msec,task-clock:u,2300712631,100.00,0.272,CPUs utilized
+0,,context-switches:u,2300712631,100.00,0.000,/sec
+0,,cpu-migrations:u,2300712631,100.00,0.000,/sec
+23236,,page-faults:u,2300712631,100.00,10.099,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2112.94,msec,task-clock:u,2112942892,100.00,0.247,CPUs utilized
+0,,context-switches:u,2112942892,100.00,0.000,/sec
+0,,cpu-migrations:u,2112942892,100.00,0.000,/sec
+18153,,page-faults:u,2112942892,100.00,8.591,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2278.38,msec,task-clock:u,2278379895,100.00,0.251,CPUs utilized
+0,,context-switches:u,2278379895,100.00,0.000,/sec
+0,,cpu-migrations:u,2278379895,100.00,0.000,/sec
+21827,,page-faults:u,2278379895,100.00,9.580,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2276.78,msec,task-clock:u,2276784851,100.00,0.279,CPUs utilized
+0,,context-switches:u,2276784851,100.00,0.000,/sec
+0,,cpu-migrations:u,2276784851,100.00,0.000,/sec
+20613,,page-faults:u,2276784851,100.00,9.054,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2079.28,msec,task-clock:u,2079280040,100.00,0.273,CPUs utilized
+0,,context-switches:u,2079280040,100.00,0.000,/sec
+0,,cpu-migrations:u,2079280040,100.00,0.000,/sec
+23698,,page-faults:u,2079280040,100.00,11.397,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,
+9, 2050.33,msec,task-clock:u,2050332376,100.00,0.263,CPUs utilized
+0,,context-switches:u,2050332376,100.00,0.000,/sec
+0,,cpu-migrations:u,2050332376,100.00,0.000,/sec
+19597,,page-faults:u,2050332376,100.00,9.558,K/sec
+<not supported>,,cycles:u,0,100.00,,
+<not supported>,,instructions:u,0,100.00,,
+<not supported>,,branches:u,0,100.00,,
+<not supported>,,branch-misses:u,0,100.00,,

@@ -3,6 +3,7 @@ from numpy.fft import fft, ifft
 import cmath
 import matplotlib.pyplot as plt
 import pandas as pd
+import sys
 
 # Calculate rho_H(n)
 # n : integer in 0..N-1
@@ -85,7 +86,10 @@ def plot_horizontal(Hs, Ns, Ts, fBms):
 def main():
     ##### Constants and settings #####
     epsilon = 0.249 # distance between H's
-    q = 10 # q : log of the number of points on the time interval, int in (0, infty)
+    if len(sys.argv) > 1:
+        q = int(sys.argv[1])
+    else:
+        q = 10 # q : log of the number of points on the time interval, int in (0, infty)
     ##################################
 
     N = 2**q + 1 # 1/delta where delta is the granularity of the discretized time interval
@@ -106,7 +110,7 @@ def main():
         
         fBms[k] = simulate(N, M, H)
 
-    plot(Hs, Ns, Ts, fBms)
+    #plot(Hs, Ns, Ts, fBms)
 
 if __name__ == "__main__":
     main()
