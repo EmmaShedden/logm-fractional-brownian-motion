@@ -16,4 +16,7 @@ where the series is almost surely uniformly convergent in $t$ on each compact su
 Here,  $\Psi_H$ is the left-sided fractional primitive of order $H + \frac{1}{2}$ of $\psi$:
 $$\Psi_H (x) = \int_{\mathbb{R}} e^{ix \xi} \frac{\hat{\psi}(\xi)}{(i \xi)^{H + 1/2}} d \xi$$.
 
-By truncating the sum in this theorem to some sufficiently large but finite number of terms, and representing $\varepsilon_{j,k}$ as a standard Gaussian random variable, we can use the scipy.integrate module in Python to evaluate the left-sided fractional primitive and simulate fractional Brownian Motion.
+By truncating the sum in this theorem to some sufficiently large but finite number of 
+terms, and representing $\varepsilon_{j,k}$ as a standard Gaussian random variable, we can
+use the scipy.integrate module in Python to evaluate the left-sided fractional primitive 
+and simulate fractional Brownian Motion.
