@@ -3,7 +3,7 @@
 Here we use the Meyer wavelet series representation of fractional Brownian Motion to generate simulations.
 The Meyer mother wavelet is defined as follows:
 
-Let $$\psi_1(t) = \frac{\frac{4}{3\pi}(t-1/2)\cos{(\frac{2\pi}{3}(t-1/2))} - \frac{1}{\pi}\sin{(\frac{4\pi}{3}(t-1/2))}}{(t-1/2) - \frac{64}{9}(t-1/2)^3}$$
+Let $$\psi_1(t) = \frac{\frac{4}{3\pi}(t-1/2)\cos{(\frac{2\pi}{3}(t-1/2))} - \frac{1}{\pi}\sin{(\frac{4\pi}{3}(t-1/2))}}{(t-1/2) - \frac{16}{9}(t-1/2)^3}$$
 and 
 $$\psi_2(t) = \frac{\frac{8}{3\pi}(t-1/2)\cos{(\frac{8\pi}{3}(t-1/2))} + \frac{1}{\pi}\sin{(\frac{4\pi}{3}(t-1/2))}}{(t-1/2) - \frac{64}{9}(t-1/2)^3}.$$
 Then, the Meyer mother wavelet is
