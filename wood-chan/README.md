@@ -198,7 +198,9 @@ $$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k
 - So $\text{DFT} \circ \text{DFT}^{-1} = \text{DFT}^{-1} \circ \text{DFT} = I_n$. This can also be seen using the relationship with $Q$ and $Q^*$ given above.
 
 ### Theorem 6.1
-A circulant matrix $C$ has a representation $C=Q\Lambda Q^{*}$ where $\Lambda=\text{diag}(\lambda_0,...,\lambda_{M-1}), \lambda_{k}=\sum\limits_{j=0}^{M-1}c_je^{\frac{-2\pi i j k}{M}}.$ Consequently, $C=SS^{*}$ with $S=Q\Lambda^{\frac{1}{2}}Q^{*}, \Lambda^{\frac{1}{2}}=\text{diag}(\lambda^{\frac{1}{2}},...,\lambda_{M-1}^{\frac{1}{2}})$
+```math
+\text{A circulant matrix } C \text{ has a representation } C=Q\Lambda Q^{*} \text{ where } \Lambda= \text{ diag }(\lambda_0,...,\lambda_{M-1}), \lambda_{k}=\sum\limits_{j=0}^{M-1}c_je^{\frac{-2\pi i j k}{M}}. \text{Consequently }, C=SS^{*} with S=Q\Lambda^{\frac{1}{2}}Q^{*}, \Lambda^{\frac{1}{2}}=\text{diag}(\lambda^{\frac{1}{2}},...,\lambda_{M-1}^{\frac{1}{2}})
+```
 <!-- - Let $\displaystyle{ \lambda_k := \sum_{j=0}^{M-1}c_j \exp(2 \pi i \frac{jk}{M}) }$ for $k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace$.
 
 - Let $\Lambda := \text{diag}(\lambda_0, ~ \cdots, ~ \lambda_{M-1})$ be the diagonal matrix with $\lambda_k$'s along the diagonal.
