@@ -3,7 +3,7 @@
 ## Mathematical Fundation
 Source: [_A mini-course on Wavelets and Fractional Processes_, Antoine Ayache](http://math.univ-lille1.fr/~ayache/COURSE-WavFrac.pdf)
 
-The series representation of fractional Brownian motion is the generalization of that of stantion Brownian motion [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion/-/tree/main/series-representation) 
+The series representation of fractional Brownian motion is the generalization of that of standard Brownian motion [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion/-/tree/main/series-representation) 
 
 We use the Meyer wavelet for simulation.
 The Meyer mother wavelet is defined as follows:
