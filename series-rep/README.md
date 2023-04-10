@@ -28,8 +28,9 @@ $$\Psi_H (x) = \int_{\mathbb{R}} e^{ix \xi} \frac{\hat{\psi}(\xi)}{(i \xi)^{H + 
 ## Simulation
 
 ### Remark
-- We only simulate $B^H(t)$ for finite summands.
+- Using this series representation, we simulate $B^H(t)$ with large but finite summands.
 
 ### Algorithm
-- Representing $\varepsilon_{j,k}$ as a standard Gaussian random variable.
-- Use the `scipy.integrate` module in Python to evaluate the left-sided fractional primitive and simulate fractional Brownian motion.
+- Represent $\varepsilon_{j,k}$ as a standard Gaussian random variable.
+- Use the `scipy.integrate` module in Python to evaluate the left-sided fractional primitive.
+- Simulate fractional Brownian motion by evaluating this series at a regularly discretised time interval.
