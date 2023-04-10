@@ -1,9 +1,9 @@
 # Wood-Chan (Circulant) Method
 
-See my [GitHub](https://github.com/EmmaShedden/log-m/tree/master/wood-chan) page for a version of this README that renders correctly. Differences between the way GitHub and GitLab render Markdown equations mean that a large fraction of this page is not reader-friendly, but the GitHub version works fine.
+See my [GitHub](https://github.com/EmmaShedden/log-m/tree/master/wood-chan) page for a detailed version of this README that renders correctly. Differences between the way GitHub and GitLab render Markdown equations mean that a large fraction of this page is not reader-friendly, but the GitHub version works fine.
 
 ## Mathematical foundation
-Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https://drive.google.com/file/d/1BEjP1AHJWwW1HtJDZcKPLzWJ1wXDoxcW/view)
+Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https://www.worldscientific.com/doi/pdf/10.1142/S2010194515600022)
 
 ### Problem setup
 - Let $T := \lbrace 0, \frac{1}{N}, \frac{2}{N}, \cdots, \frac{N-1}{N}, 1 \rbrace$ be the discretized unit time interval with $N$ increments.
@@ -144,6 +144,7 @@ q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}
 corresponds to taking DFT (discrete Fourier transformation) and inverse DFT respectively.
 
 ### Applying DFT
+Refer to [Discrete Fourier Transformation](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/fractional-brownian-motion/-/blob/main/fft/README.md#discrete-fourier-transformation) for details.
 <!-- - The discrete Fourier transform takes as input the coefficient representation of a polynomial and outputs a point-value representation of the polynomial, where the points lie on the unit circle. In particular:
     - Let $f(x) = \displaystyle{ \sum_{k=0}^{n-1} a_k x^k }$ be a polynomial in $\mathbb{C}$ of degree $n-1$.
     - Then the input is $(a_0, ~ \cdots, ~ a_{n-1}) \in \mathbb{C}^n$.
@@ -263,22 +264,14 @@ C = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*}) = (Q \Lambda^{1/2} Q^{
 \end{aligned}
 ```
 ## Simulation
-
 for $N$ timestamps, let $M=2(N-1)$
 
 - Compute $c_0,...,c_{M-1}$ with $\rho_H(1),...,\rho_H(N-1)$
-
 - Take FFT on the circulant matrix $C=circ(c_0,...,c_{M-1})$ to get $\lambda_0, ..., \lambda_{M-1}$
-
 - Generate independent standard Gaussian $\zeta_1,...,\zeta_M$
-
 - Take the inverse FFT of $\zeta_1,...,\zeta_M$ to get $\frac{1}{\sqrt{M}}Q^{*}(\zeta_1, ..., \zeta_M)^T$
-
 - Multiply this elementwise by $\sqrt{\lambda_0}, ..., \sqrt{\lambda_{M-1}}$
-
 - Take FFT of result to get $$\xi = \sqrt{M}Q\Lambda^{\frac{1}{2}}\frac{1}{\sqrt{M}}Q^{*}(\zeta_1, ..., \zeta_M)^T=S(\zeta_1, ..., \zeta_M)^T$$
-
 - Take $\xi_1,...,\xi_N$ and multiply by $(\frac{T}{N})^H$ to obtain the increments of fBm
-
 - Take the cumulative sum to get the value of fBm
 
