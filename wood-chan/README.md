@@ -262,5 +262,6 @@ C = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*}) = (Q \Lambda^{1/2} Q^{
  &= \text{DFT} \left( \Lambda^{1/2} \text{DFT}^{-1} (\zeta) \right) & \\
 \end{aligned}
 ```
+## Simulation
 
 
