@@ -10,7 +10,7 @@ This repository contains:
 - Implementation of the Fast Fourier Transform (FFT) and inverse FFT on powers of two, a useful algorithm which our simulation method relies on for efficiency over naive approaches (Python).
     - Randomized unit tests of this implementation against standard library implementations in `scikit` and `numpy`.
     - This is for learning purposes; the standard library functions are used in our simulation code.
-- Implementation of the [series representation of fBm](http://math.univ-lille1.fr/~ayache/COURSE-WavFrac.pdf) (Python).
+- Implementation of the [Series Representation of fBm](http://math.univ-lille1.fr/~ayache/COURSE-WavFrac.pdf) (Python).
 
 ## Installation
 See our installation instructions [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion#installation).
