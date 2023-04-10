@@ -3,9 +3,9 @@
 ## Mathematical Fundation
 Source: [_A mini-course on Wavelets and Fractional Processes_, Antoine Ayache](http://math.univ-lille1.fr/~ayache/COURSE-WavFrac.pdf)
 
-The series representation of fractional brownian motion is the generalization of that of stantion Brownian motion [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion/-/tree/main/series-representation) 
+The series representation of fractional Brownian motion is the generalization of that of stantion Brownian motion [here](https://gitlab.eecs.umich.edu/logm/wn23/fractional-brownian-motion/standard-brownian-motion/-/tree/main/series-representation) 
 
-We use the Meyer wavelet series representation of fractional Brownian Motion to generate simulations.
+We use the Meyer wavelet for simulation.
 The Meyer mother wavelet is defined as follows:
 
 Let $$\psi_1(t) = \frac{\frac{4}{3\pi}(t-1/2)\cos{(\frac{2\pi}{3}(t-1/2))} - \frac{1}{\pi}\sin{(\frac{4\pi}{3}(t-1/2))}}{(t-1/2) - \frac{16}{9}(t-1/2)^3}$$
@@ -32,4 +32,4 @@ $$\Psi_H (x) = \int_{\mathbb{R}} e^{ix \xi} \frac{\hat{\psi}(\xi)}{(i \xi)^{H + 
 
 ### Algorithm
 - Representing $\varepsilon_{j,k}$ as a standard Gaussian random variable.
-- Use the `scipy.integrate` module in Python to evaluate the left-sided fractional primitive and simulate fractional Brownian Motion.
+- Use the `scipy.integrate` module in Python to evaluate the left-sided fractional primitive and simulate fractional Brownian motion.
