@@ -267,11 +267,18 @@ C = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*}) = (Q \Lambda^{1/2} Q^{
 for $N$ timestamps, let $M=2(N-1)$
 
 - Compute $c_0,...,c_{M-1}$ with $\rho_H(1),...,\rho_H(N-1)$
+
 - Take FFT on the circulant matrix $C=circ(c_0,...,c_{M-1})$ to get $\lambda_0, ..., \lambda_{M-1}$
+
 - Generate independent standard Gaussian $\zeta_1,...,\zeta_M$
+
 - Take the inverse FFT of $\zeta_1,...,\zeta_M$ to get $\frac{1}{\sqrt{M}}Q^{*}(\zeta_1, ..., \zeta_M)^T$
+
 - Multiply this elementwise by $\sqrt{\lambda_0}, ..., \sqrt{\lambda_{M-1}}$
+
 - Take FFT of result to get $$\xi = \sqrt{M}Q\Lambda^{\frac{1}{2}}\frac{1}{\sqrt{M}}Q^{*}(\zeta_1, ..., \zeta_M)^T=S(\zeta_1, ..., \zeta_M)^T$$
+
 - Take $\xi_1,...,\xi_N$ and multiply by $(\frac{T}{N})^H$ to obtain the increments of fBm
+
 - Take the cumulative sum to get the value of fBm
 
