@@ -199,8 +199,12 @@ $$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k
 
 ### Theorem 6.1
 ```math
-\text{A circulant matrix } C \text{ has a representation } C=Q\Lambda Q^{*} \text{ where } \Lambda= \text{ diag }(\lambda_0,...,\lambda_{M-1}), \lambda_{k}=\sum\limits_{j=0}^{M-1}c_je^{\frac{-2\pi i j k}{M}}. \text{Consequently }, C=SS^{*} with S=Q\Lambda^{\frac{1}{2}}Q^{*}, \Lambda^{\frac{1}{2}}=\text{diag}(\lambda^{\frac{1}{2}},...,\lambda_{M-1}^{\frac{1}{2}})
+\text{A circulant matrix } C \text{ has a representation } C=Q\Lambda Q^{*} \text{ where } \Lambda= \text{ diag }(\lambda_0,...,\lambda_{M-1}), \lambda_{k}=\sum\limits_{j=0}^{M-1}c_je^{\frac{-2\pi i j k}{M}}. 
 ```
+```math
+\text{Consequently }, C=SS^{*} with S=Q\Lambda^{\frac{1}{2}}Q^{*}, \Lambda^{\frac{1}{2}}=\text{diag}(\lambda^{\frac{1}{2}},...,\lambda_{M-1}^{\frac{1}{2}})
+```
+You can refer to section 4.8 of [_Matrix Computations_, Golub, G.H. and Van Loan, C.F.](https://github.com/CompPhysics/ComputationalPhysicsMSU/blob/master/doc/Lectures/Golub%2C%20Van%20Loan%20-%20Matrix%20Computations.pdf) for the proof.
 <!-- - Let $\displaystyle{ \lambda_k := \sum_{j=0}^{M-1}c_j \exp(2 \pi i \frac{jk}{M}) }$ for $k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace$.
 
 - Let $\Lambda := \text{diag}(\lambda_0, ~ \cdots, ~ \lambda_{M-1})$ be the diagonal matrix with $\lambda_k$'s along the diagonal.
@@ -233,7 +237,7 @@ $$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k
 
 where the last step references the construction of the circulant matrix [above](#circulant-matrix). Therefore $Q \Lambda Q^* = C$. -->
 
-- We have proved $Q$ is unitary, and by construction $\Lambda$ is diagonal. It follows that the $\lambda_k$ are the eigenvalues of C.
+- We can verify that the $\lambda_k$ are the eigenvalues of C.
 
 - By previous assertion, the $C$ is positive definite, so has positive, real eigenvalues. Therefore $\Lambda$ so has a real square root matrix constructed efficiently by raising each diagonal entry to the power of $\frac{1}{2}$. Further, all the relevant matrices are symmetric. So, 
 
@@ -244,7 +248,7 @@ C = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*}) = (Q \Lambda^{1/2} Q^{
 
 - Let $S := Q \Lambda^{1/2} Q^*$. By uniqueness of the square root of $C$, $S$ is real. [(source)](https://www.sciencedirect.com/science/article/pii/S0024379500002433)
 
-- Therefore $(\xi_1, ~ \cdots, ~ \xi_{N-1}, ~ \xi_{N-1}, ~ \cdots, ~ \xi_1) = S\zeta$ where $\zeta$ is standard Gaussian. (TODO)
+- Therefore $(\xi_1, ~ \cdots, ~ \xi_{N-1}, ~ \xi_{N-1}, ~ \cdots, ~ \xi_1) = S\zeta$ where $\zeta$ is standard Gaussian.
 
 - This can be computed efficiently using DFT: 
 
@@ -259,7 +263,4 @@ C = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*}) = (Q \Lambda^{1/2} Q^{
 \end{aligned}
 ```
 
-## Simulation results
 
-<!--- ![Paths of fBm simulated for 9 values of the Hurst parameter](/wood-chan/fBm_9_small.png) -->
-<p align="center"><img width="600" src="/wood-chan/fBm_9.png"></p>
