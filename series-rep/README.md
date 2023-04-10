@@ -32,5 +32,5 @@ $$\Psi_H (x) = \int_{\mathbb{R}} e^{ix \xi} \frac{\hat{\psi}(\xi)}{(i \xi)^{H + 
 
 ### Algorithm
 - Represent $\varepsilon_{j,k}$ as a standard Gaussian random variable.
-- Use the `scipy.integrate` module in Python to evaluate the left-sided fractional primitive.
+- Use the `integrate.simpson` module in Python to evaluate the left-sided fractional primitive.
 - Simulate fractional Brownian motion by evaluating this series at a regularly discretised time interval.
