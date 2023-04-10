@@ -105,7 +105,8 @@ C := \text{circ}(c_0, ~ \cdots, ~ c_{M-1}) =
 ```math
 q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}
 ```
-- Observe that $Q^* =: (q_{jk}^*) = (\overline{q_{kj}}) = (\overline{q_{jk}})$ so that $\forall j, ~ k \in \lbrace0, ~ \cdots, ~ M-1 \rbrace$:
+- Observe that $Q^* =: (q_{jk}^*) = (\overline{q_{kj}}) = (\overline{q_{jk}})$ so we have $Q Q^* = Q^* Q = I_M$, and $Q$ is unitary
+<!-- that $\forall j, ~ k \in \lbrace0, ~ \cdots, ~ M-1 \rbrace$:
 
 ```math
 \begin{aligned}
@@ -126,9 +127,9 @@ q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}
     \end{cases} & \text{note the denominator is nonzero by assumption} \\
  &= \delta_{jk}
 \end{aligned}
-```
+``` --> 
 
-- Therefore by symmetry, $Q Q^* = Q^* Q = I_M$, and $Q$ is unitary.
+<!-- - Therefore by symmetry, $Q Q^* = Q^* Q = I_M$, and $Q$ is unitary. -->
 
 - Right-multiplying $Q$ and $Q^*$, respectively, by a column vector $a = (a_0, ~ \cdots, ~ a_{M-1})^T \in \mathbb{C}^M$ gives:
 
@@ -140,6 +141,7 @@ q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}
  = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} a_k \exp {\left( 2\pi i \frac{jk}{M} \right)} & \\
 \end{aligned}
 ```
+corresponds to taking DFT (discrete Fourier transformation) and inverse DFT respectively.
 
 ### Applying DFT
 - The discrete Fourier transform takes as input the coefficient representation of a polynomial and outputs a point-value representation of the polynomial, where the points lie on the unit circle. In particular:
@@ -196,7 +198,8 @@ $$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k
 - So $\text{DFT} \circ \text{DFT}^{-1} = \text{DFT}^{-1} \circ \text{DFT} = I_n$. This can also be seen using the relationship with $Q$ and $Q^*$ given above.
 
 ### Theorem 6.1
-- Let $\displaystyle{ \lambda_k := \sum_{j=0}^{M-1}c_j \exp(2 \pi i \frac{jk}{M}) }$ for $k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace$.
+A circulant matrix $C$ has a representation $C=Q\Lambda Q^{*}$ where $\Lambda=\text{diag}(\lambda_0,...,\lambda_{M-1}), \lambda_{k}=\sum\limits_{j=0}^{M-1}c_je^{\frac{-2\pi i j k}{M}}.$ Consequently, $C=SS^{*}$ with $S=Q\Lambda^{\frac{1}{2}}Q^{*}, \Lambda^{\frac{1}{2}}=\text{diag}(\lambda^{\frac{1}{2}},...,\lambda_{M-1}^{\frac{1}{2}})$
+<!-- - Let $\displaystyle{ \lambda_k := \sum_{j=0}^{M-1}c_j \exp(2 \pi i \frac{jk}{M}) }$ for $k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace$.
 
 - Let $\Lambda := \text{diag}(\lambda_0, ~ \cdots, ~ \lambda_{M-1})$ be the diagonal matrix with $\lambda_k$'s along the diagonal.
 
@@ -226,7 +229,7 @@ $$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k
 \end{aligned}
 ```
 
-where the last step references the construction of the circulant matrix [above](#circulant-matrix). Therefore $Q \Lambda Q^* = C$.
+where the last step references the construction of the circulant matrix [above](#circulant-matrix). Therefore $Q \Lambda Q^* = C$. -->
 
 - We have proved $Q$ is unitary, and by construction $\Lambda$ is diagonal. It follows that the $\lambda_k$ are the eigenvalues of C.
 
