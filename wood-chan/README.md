@@ -1,4 +1,4 @@
-# Wood-Chan (Circulant Method) Algorithm
+# Wood-Chan (Circulant) Method
 
 See my [GitHub](https://github.com/EmmaShedden/log-m/tree/master/wood-chan) page for a version of this README that renders correctly. Differences between the way GitHub and GitLab render Markdown equations mean that a large fraction of this page is not reader-friendly, but the GitHub version works fine.
 
@@ -17,12 +17,12 @@ Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https:/
 
 $$ \text{Cov}(B^H_s, B^H_t) = \mathbb{E}[B^H_s B^H_t] = \frac{1}{2}(t^{2H} + s^{2H} - |t - s|^{2H}) $$
 
-- Let $\xi_k = \xi_k^H := B_k^H - B_{k-1}^H = N^{-2H} \left ( B_{t_k}^H - B_{t_{k-1}}^H \right )$ for $k \in I_1 := \lbrace1, \cdots, N\rbrace$.
+- Let $\xi_k = \xi_k^H := B_k^H - B_{k-1}^H = N^{H} \left ( B_{t_k}^H - B_{t_{k-1}}^H \right )$ for $k \in I_1 := \lbrace1, \cdots, N\rbrace$.
     - $\xi_0 = \xi_0^H := B_0^H = 0$ with probability $1$.
 
 - Now, $\xi := (\xi_1, \cdots, \xi_N)$ is a centered Gaussian vector:
 
-$$\mathbb{E}(\xi_k) = \mathbb{E}[B_k^H - B_{k-1}^H] = \mathbb{E}[B_k^H] - \mathbb{E}[B_{k-1}^H] = N^{-2H} \left ( \mathbb{E}[B_{t_k}^H] - \mathbb{E}[B_{t_{k-1}}^H] \right ) = N^{-2H} \left ( 0 - 0 \right ) = 0 ~~ \forall k \in I_1$$
+$$\mathbb{E}(\xi_k) = \mathbb{E}[B_k^H - B_{k-1}^H] = \mathbb{E}[B_k^H] - \mathbb{E}[B_{k-1}^H] = N^{H} \left ( \mathbb{E}[B_{t_k}^H] - \mathbb{E}[B_{t_{k-1}}^H] \right ) = N^{H} \left ( 0 - 0 \right ) = 0 ~~ \forall k \in I_1$$
 
 - $\xi$ represents fGn, or fractional Gaussian noise.
 
@@ -35,29 +35,15 @@ $$\mathbb{E}(\xi_k) = \mathbb{E}[B_k^H - B_{k-1}^H] = \mathbb{E}[B_k^H] - \mathb
 
 ```math
 \begin{aligned}
-\text{Cov}(\xi_i, ~ \xi_j) &= \text{Cov}(B_i^H - B_{i-1}^H, ~ B_j^H - B_{j-1}^H) & \text{definition of } \xi \\
-& = \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - \mathbb{E} \left[B_i^H - B_{i-1}^H \right] \cdot \mathbb{E} \left[B_j^H - B_{j-1}^H \right] & \text{definition of covariance} \\
-& = \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - \left(\mathbb{E} \left[B_i^H \right] - \mathbb{E} \left[B_{i-1}^H \right] \right) \cdot \left(\mathbb{E} \left[B_j^H \right] - \mathbb{E} \left[B_{j-1}^H \right] \right) & \text{linearity of expectation} \\
-& = \mathbb{E} \left[ \left(B_i^H - B_{i-1}^H \right) \left(B_j^H - B_{j-1}^H \right) \right] - (0 - 0) (0 - 0) & B^H \text{ is centered by definition} \\
-& = \mathbb{E} \left[B_i^H B_j^H - B_i^H B_{j-1}^H - B_{i-1}^H B_j^H + B_{i-1}^H B_{j-1}^H \right] & \\
-& = \mathbb{E} \left[B_i^H B_j^H \right] - \mathbb{E} \left[B_i^H B_{j-1}^H \right] - \mathbb{E} \left[B_{i-1}^H B_j^H \right] + \mathbb{E} \left[B_{i-1}^H B_{j-1}^H \right] & \text{linearity of expectation} \\
-& = \frac 1 2 \left(i^{2H} + j^{2H} - \left| i - j \right|^{2H} \right) & \\
-& \hspace2ex    - \frac 1 2 \left(i^{2H} + (j-1)^{2H} - \left| i - (j-1) \right|^{2H} \right) & \\
-& \hspace2ex    - \frac 1 2 \left((i-1)^{2H} + j^{2H} - \left| (i-1) - j \right|^{2H} \right)  & \\
-& \hspace2ex    + \frac 1 2 \left((i-1)^{2H} + (j-1)^{2H} - \left| (i-1) - (j-1) \right|^{2H} \right) & \text{definition of fBm} \\
-& = \frac 1 2 \left(- | i - j |^{2H}  +  | i - (j-1) |^{2H}  +  | (i-1) - j |^{2H}  -  | (i-1) - (j-1) |^{2H} \right) & \\
-& = \frac 1 2 \left(-2 | i - j |^{2H}  +  | i - (j-1) |^{2H}  +  | (i-1) - j |^{2H} \right) & \\
-& = \frac 1 2 \left(-2 | i-j |^{2H}  +  | i-j+1 |^{2H}  +  | i-j-1 |^{2H} \right) & \\
-& = \frac 1 2 \left(-2 | i-j |^{2H}  +  | i-j+1 |^{2H}  +  | i-j-1 |^{2H} \right) & (*) \\
+\text{Cov}(\xi_i, ~ \xi_j) &= \text{Cov}(B_i^H - B_{i-1}^H, ~ B_j^H - B_{j-1}^H)&\\
 & = \frac 1 2 \left(-2 n^{2H}  +  (n+1)^{2H}  +  (n-1)^{2H} \right) & \text{where } n := |i-j| \text{, } i \neq j \in I_1 \\
-\text{and ~ Cov} (\xi_i, ~ \xi_i) & = \frac 1 2 \left(-2 | i-i |^{2H}  +  | i-i+1 |^{2H}  +  | i-i-1 |^{2H} \right) & \text{same as above, up to } (*); ~ j := i \\
-& = \frac 1 2 \left( 1^{2H} + 1^{2H} \right) & \\
+\text{and ~ Cov} (\xi_i, ~ \xi_i) & = \frac 1 2 \left(-2 | i-i |^{2H}  +  | i-i+1 |^{2H}  +  | i-i-1 |^{2H} \right)&\\
 & = 1 & \text{where } i \in I_1
 \end{aligned}
 ```
 
 - Observe that the covariance depends only on the difference between the timestamps, not their values; in other words, the sequence $\xi_1, \cdots, \xi_N$ is a stationary Gaussian process.
-    - This is essentially a special case of the proof that fBm has stationary increments; the general version is not much different.
+    <!-- - This is essentially a special case of the proof that fBm has stationary increments; the general version is not much different. -->
     - As a result, the elements of each diagonal of the covariance matrix for $\xi$ are equal.
     - Like all variance-covariance matrices, this matrix is also symmetric.
 
@@ -112,13 +98,13 @@ C := \text{circ}(c_0, ~ \cdots, ~ c_{M-1}) =
  \rho_H(1)  & \rho_H(2) & \rho_H(3) & \cdots    & \rho_H(1) & 1         \\
 \end{pmatrix}
 ```
+<!-- 
+- Observe that $C_{jk} = c_{k-j} = c_{|k-j|}$ for $j \leq k$ (i.e. on/above the main diagonal), and $C_{jk} = c_{M-j+k} = c_{M-|k-j|}$ for $j > k$ (i.e. below the main diagonal). But in fact, $c_r = c_{M-r} = \rho_H(r)$ for all $r \in \lbrace 1, ~ \cdots, ~ M-1 \rbrace$. So $C_{jk} = c_{|k-j|} = c_{M-|k-j|}$ for all $j, ~ k \in \{ 0, ~ \cdots, ~ M-1 \}$ such that ${|k-j|} {\not \in} \lbrace 0, ~ M \rbrace$ i.e. $M ~ \nmid ~ j-k$. -->
 
-- Observe that $C_{jk} = c_{k-j} = c_{|k-j|}$ for $j \leq k$ (i.e. on/above the main diagonal), and $C_{jk} = c_{M-j+k} = c_{M-|k-j|}$ for $j > k$ (i.e. below the main diagonal). But in fact, $c_r = c_{M-r} = \rho_H(r)$ for all $r \in \lbrace 1, ~ \cdots, ~ M-1 \rbrace$. So $C_{jk} = c_{|k-j|} = c_{M-|k-j|}$ for all $j, ~ k \in \{ 0, ~ \cdots, ~ M-1 \}$ such that ${|k-j|} {\not \in} \lbrace 0, ~ M \rbrace$ i.e. $M ~ \nmid ~ j-k$.
-
-- Let $Q := ( q_{jk} )_{j, k \in \lbrace 0, ~ \cdots, ~ M-1 \rbrace}$ with coefficients proportional to $M$-th roots of unity:
-
-$$q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}$$
-
+- Let $Q := ( q_{jk} )_{j, k \in \{0,...,M-1\}}$ with coefficients proportional to $M$-th roots of unity:
+```math
+q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}
+```
 - Observe that $Q^* =: (q_{jk}^*) = (\overline{q_{kj}}) = (\overline{q_{jk}})$ so that $\forall j, ~ k \in \lbrace0, ~ \cdots, ~ M-1 \rbrace$:
 
 ```math
