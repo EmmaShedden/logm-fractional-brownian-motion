@@ -144,7 +144,7 @@ q_{jk} = \frac{1}{\sqrt{M}} \exp {\left( -2\pi i \frac{jk}{M} \right)}
 corresponds to taking DFT (discrete Fourier transformation) and inverse DFT respectively.
 
 ### Applying DFT
-- The discrete Fourier transform takes as input the coefficient representation of a polynomial and outputs a point-value representation of the polynomial, where the points lie on the unit circle. In particular:
+<!-- - The discrete Fourier transform takes as input the coefficient representation of a polynomial and outputs a point-value representation of the polynomial, where the points lie on the unit circle. In particular:
     - Let $f(x) = \displaystyle{ \sum_{k=0}^{n-1} a_k x^k }$ be a polynomial in $\mathbb{C}$ of degree $n-1$.
     - Then the input is $(a_0, ~ \cdots, ~ a_{n-1}) \in \mathbb{C}^n$.
     - DFT returns the point-value representation where the points are the $n$-th roots of unity, i.e. $(X_0, ~ \cdots, ~ X_{n-1})$ where $X_k = f(x_k)$ for $\displaystyle{ x_k = \exp(-2 \pi i \frac{k}{n}) }$, $k \in \lbrace 0, ~ \cdots, ~ n-1 \rbrace$.
@@ -195,7 +195,7 @@ $$X_j = \sum_{k=0}^{n-1} a_k \exp \left (-2 \pi i \frac j n \right )^k = \sum_{k
 
 - So $\displaystyle{ Q^* a = \sqrt{M} \cdot \text{DFT}^{-1}(a) }$ for any vector $a \in \mathbb{C}^{M}$.
 
-- So $\text{DFT} \circ \text{DFT}^{-1} = \text{DFT}^{-1} \circ \text{DFT} = I_n$. This can also be seen using the relationship with $Q$ and $Q^*$ given above.
+- So $\text{DFT} \circ \text{DFT}^{-1} = \text{DFT}^{-1} \circ \text{DFT} = I_n$. This can also be seen using the relationship with $Q$ and $Q^*$ given above. -->
 
 ### Theorem 6.1
 ```math
