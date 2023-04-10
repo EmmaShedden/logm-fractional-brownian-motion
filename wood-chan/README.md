@@ -11,7 +11,7 @@ Source: [_Fractional Brownian motion in a Nutshell_, Georgiy Shevchenko](https:/
 - Let $t_k = t_k^N := \frac{k}{N} \in T$ for $k \in I_0 := \lbrace0, \cdots, N\rbrace$ denote the timestamps.
 
 - Let $B_t^H$ for $t \in T$ be the value of an fBm with Hurst parameter $H$ at time $t$.
-    - Since $B^H$ is self-stationary, $B_{t_k}^H = B_{k/N}^H = N^{-2H} B_k^H$ where $k \in I_0$.
+    - Since $B^H$ is self-stationary, $B_{t_k}^H = B_{k/N}^H = N^{-H} B_k^H$ where $k \in I_0$.
 
 - We know the covariance function of $B^H$ from its definition:
 
