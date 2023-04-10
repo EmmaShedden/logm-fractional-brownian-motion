@@ -264,13 +264,11 @@ C = (Q \Lambda^{1/2} Q^{*}) \cdot (Q \Lambda^{1/2} Q^{*}) = (Q \Lambda^{1/2} Q^{
 ```
 ## Simulation
 
-We thus have the following simulation algorithm:
-
 for $N$ timestamps, let $M=2(N-1)$
 
 - Compute $c_0,...,c_{M-1}$ with $\rho_H(1),...,\rho_H(N-1)$
 
-- Take FFT to get $\lambda_0, ..., \lambda_{M-1}$
+- Take FFT on the circulant matrix $C=circ(c_0,...,c_{M-1})$ to get $\lambda_0, ..., \lambda_{M-1}$
 
 - Generate independent standard Gaussian $\zeta_1,...,\zeta_M$
 
