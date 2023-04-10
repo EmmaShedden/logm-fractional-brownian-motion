@@ -69,4 +69,4 @@ __Instructors:__ Ahmad Barhoumi, Sam Hansen
 __Institution:__ University of Michigan
 
 ## Project status
-In development.
+Complete.
