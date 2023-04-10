@@ -42,8 +42,13 @@ Depending on your setup, you may need to replace the command `python` with `pyth
 <p align="center"><img width="600" src="/wood-chan/fBm_9.png"></p>
 
 ### Series Representation of fBm
-1. Run `cd series-representation/`
-2. 
+1. Run `cd series-rep/`
+2. Refer to the instructions for your choice of installation in order to open `main.ipynb`.
+3. Change any settings you wish in the cell at the top of the file. You can choose whether to display and/or store the output graphs, and whether to run intermediate tests of individual functions.
+4. In the top menu selection, find __Kernel__ and select __Restart & Run All__.
+    - Note that the generation of the images takes several minutes. This is normal.
+5. If you choose to store the output graphs, they can be found in `[path-to-repo]/series-rep/`. You can view them in your IDE or any image viewer.
+    - Extra information on how to interpret output graphs can be found in inline comments in the code.
 
 #### Example output
 <p align="center"><img width="600" src="/series-rep/fBm_4.png"></p>
