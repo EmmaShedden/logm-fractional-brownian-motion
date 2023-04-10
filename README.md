@@ -54,15 +54,7 @@ Depending on your setup, you may need to replace the command `python` with `pyth
 <p align="center"><img width="600" src="/series-rep/fBm_4.png"></p>
 
 ## Performance Analysis
-```math
-            \begin{tabular}{ l | c c c }
-              & na\"{i}ve decomp. & Wood-Chan & Series Rep. \\ 
-              \hline
-             time & $\mathcal{O}(N^3)$ & $\mathcal{O}(N \log N)$ & $\mathcal{O}(N^5)$ \\ 
-             space & $\mathcal{O}(N^2)$ & $\mathcal{O}(N)$ & $\mathcal{O}(N^2)$ \\ 
-             precision & exact & exact & approximate
-            \end{tabular}
-```
+<p align="center"><img width="600" src="/Performance_Analysis.png"></p>
 
 ## Support
 If you encounter trouble running our code, you can email the following:
